@@ -8,6 +8,12 @@ import {
   Clock3,
   Users,
   BookOpen,
+  Heart,
+  Baby,
+  MessageCircleHeart,
+  Church,
+  HandCoins,
+  Crown,
   Navigation
 } from "lucide-react";
 
@@ -595,43 +601,43 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
             {[
-              {
-                icon: "💍",
-                title: "Matrimonio",
-                description:
-                  "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
-              },
-              {
-                icon: "👨‍👩‍👧",
-                title: "Crianza de Hijos",
-                description:
-                  "Principios prácticos para formar generaciones firmes en la fe."
-              },
-              {
-                icon: "💬",
-                title: "Comunicación Familiar",
-                description:
-                  "Aprendiendo a construir relaciones saludables dentro del hogar."
-              },
-              {
-                icon: "🙏",
-                title: "Vida Espiritual",
-                description:
-                  "Cómo mantener a Cristo en el centro de la familia."
-              },
-              {
-                icon: "💰",
-                title: "Finanzas Familiares",
-                description:
-                  "Administración responsable de los recursos conforme a principios bíblicos."
-              },
-              {
-                icon: "👑",
-                title: "Liderazgo Cristiano",
-                description:
-                  "Guiando el hogar con sabiduría, servicio y ejemplo."
-              }
-            ].map((tema, index) => (
+  {
+    icon: Heart,
+    title: "Matrimonio",
+    description:
+      "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
+  },
+  {
+    icon: Baby,
+    title: "Crianza de Hijos",
+    description:
+      "Principios prácticos para formar generaciones firmes en la fe."
+  },
+  {
+    icon: MessageCircleHeart,
+    title: "Comunicación Familiar",
+    description:
+      "Aprendiendo a construir relaciones saludables dentro del hogar."
+  },
+  {
+    icon: Church,
+    title: "Vida Espiritual",
+    description:
+      "Cómo mantener a Cristo en el centro de la familia."
+  },
+  {
+    icon: HandCoins,
+    title: "Finanzas Familiares",
+    description:
+      "Administración responsable de los recursos conforme a principios bíblicos."
+  },
+  {
+    icon: Crown,
+    title: "Liderazgo Cristiano",
+    description:
+      "Guiando el hogar con sabiduría, servicio y ejemplo."
+  }
+].map((tema, index) => (
 
               <div
                 key={index}
