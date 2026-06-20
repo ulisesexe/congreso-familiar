@@ -7,6 +7,7 @@ import {
   CalendarDays,
   Clock3,
   Users,
+  BookOpen,
   Navigation
 } from "lucide-react";
 
