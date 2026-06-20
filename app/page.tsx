@@ -1,21 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
-
-import {
-  MapPin,
-  CalendarDays,
-  Clock3,
-  Users,
-  BookOpen,
-  Heart,
-  Baby,
-  MessageCircleHeart,
-  Church,
-  HandCoins,
-  Crown,
-  Navigation
-} from "lucide-react";
+import { MapPin, CalendarDays, Clock3, Users, BookOpen, Heart, Baby, MessageCircleHeart, Church, HandCoins, Crown, Navigation } from "lucide-react";
 
 export default function Home() {
   return (
