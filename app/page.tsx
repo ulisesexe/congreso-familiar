@@ -1446,7 +1446,7 @@ className="block group"
   </h4>
 
   <p className="text-gray-600 mt-2">
-    GQCH+82, El Durazno, Hidalgo
+    42310, El Durazno, Hidalgo
   </p>
 
   <div
@@ -1469,7 +1469,6 @@ className="block group"
   </div>
 
 </div>
-```
 
   </div>
 
