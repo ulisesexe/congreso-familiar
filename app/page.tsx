@@ -535,272 +535,272 @@ export default function Home() {
 
 
 
-{/* TEMAS */}
-<section className="relative py-36 px-6 overflow-hidden bg-white">
+    {/* TEMAS */}
+    <section className="relative py-36 px-6 overflow-hidden bg-white">
 
-  {/* Glow decorativo */}
+      {/* Glow decorativo */}
 
-  <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
-  <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
 
-  <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto">
 
-    {/* Encabezado */}
+        {/* Encabezado */}
 
-    <div className="text-center">
+        <div className="text-center">
 
-      <span
-        className="
-          inline-block
-          px-5
-          py-2
-          rounded-full
-          bg-white
-          border
-          border-black/10
-          shadow-lg
-          text-sm
-          uppercase
-          tracking-[4px]
-          text-gray-600
-        "
-      >
-        Conferencias y Talleres
-      </span>
-
-      <h2
-        className="
-          mt-8
-          text-5xl
-          md:text-7xl
-          font-black
-          uppercase
-          text-[#20232C]
-        "
-      >
-        Temas del Congreso
-      </h2>
-
-      <p
-        className="
-          mt-8
-          max-w-3xl
-          mx-auto
-          text-xl
-          text-gray-600
-          leading-relaxed
-        "
-      >
-        Una jornada diseñada para fortalecer cada área del hogar,
-        proporcionando principios bíblicos y herramientas prácticas
-        para la vida familiar.
-      </p>
-
-    </div>
-
-    {/* Cards */}
-
-    <div className="grid lg:grid-cols-3 gap-8 mt-20">
-
-      {[
-        {
-          icon: Heart,
-          title: "Matrimonio",
-          description:
-            "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
-        },
-        {
-          icon: Baby,
-          title: "Crianza de Hijos",
-          description:
-            "Principios prácticos para formar generaciones firmes en la fe."
-        },
-        {
-          icon: MessageCircleHeart,
-          title: "Comunicación Familiar",
-          description:
-            "Aprendiendo a construir relaciones saludables dentro del hogar."
-        },
-        {
-          icon: Church,
-          title: "Vida Espiritual",
-          description:
-            "Cómo mantener a Cristo en el centro de la familia."
-        },
-        {
-          icon: HandCoins,
-          title: "Finanzas Familiares",
-          description:
-            "Administración responsable de los recursos conforme a principios bíblicos."
-        },
-        {
-          icon: Crown,
-          title: "Liderazgo Cristiano",
-          description:
-            "Guiando el hogar con sabiduría, servicio y ejemplo."
-        }
-      ].map((tema, index) => {
-
-        const Icon = tema.icon;
-
-        return (
-
-          <div
-            key={index}
+          <span
             className="
-              group
-              relative
-              overflow-hidden
-              rounded-[32px]
+              inline-block
+              px-5
+              py-2
+              rounded-full
               bg-white
               border
-              border-black/5
-              p-8
-              shadow-xl
-              hover:shadow-2xl
-              hover:-translate-y-3
-              transition-all
-              duration-500
+              border-black/10
+              shadow-lg
+              text-sm
+              uppercase
+              tracking-[4px]
+              text-gray-600
             "
           >
+            Conferencias y Talleres
+          </span>
 
-            {/* Glow Hover */}
+          <h2
+            className="
+              mt-8
+              text-5xl
+              md:text-7xl
+              font-black
+              uppercase
+              text-[#20232C]
+            "
+          >
+            Temas del Congreso
+          </h2>
 
-            <div
-              className="
-                absolute
-                inset-0
-                bg-gradient-to-br
-                from-[#20232C]/5
-                to-transparent
-                opacity-0
-                group-hover:opacity-100
-                transition-all
-                duration-500
-              "
-            />
+          <p
+            className="
+              mt-8
+              max-w-3xl
+              mx-auto
+              text-xl
+              text-gray-600
+              leading-relaxed
+            "
+          >
+            Una jornada diseñada para fortalecer cada área del hogar,
+            proporcionando principios bíblicos y herramientas prácticas
+            para la vida familiar.
+          </p>
 
-            <div className="relative z-10">
+        </div>
 
-              {/* Icono */}
+        {/* Cards */}
+
+        <div className="grid lg:grid-cols-3 gap-8 mt-20">
+
+          {[
+            {
+              icon: Heart,
+              title: "Matrimonio",
+              description:
+                "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
+            },
+            {
+              icon: Baby,
+              title: "Crianza de Hijos",
+              description:
+                "Principios prácticos para formar generaciones firmes en la fe."
+            },
+            {
+              icon: MessageCircleHeart,
+              title: "Comunicación Familiar",
+              description:
+                "Aprendiendo a construir relaciones saludables dentro del hogar."
+            },
+            {
+              icon: Church,
+              title: "Vida Espiritual",
+              description:
+                "Cómo mantener a Cristo en el centro de la familia."
+            },
+            {
+              icon: HandCoins,
+              title: "Finanzas Familiares",
+              description:
+                "Administración responsable de los recursos conforme a principios bíblicos."
+            },
+            {
+              icon: Crown,
+              title: "Liderazgo Cristiano",
+              description:
+                "Guiando el hogar con sabiduría, servicio y ejemplo."
+            }
+          ].map((tema, index) => {
+
+            const Icon = tema.icon;
+
+            return (
 
               <div
+                key={index}
                 className="
-                  w-20
-                  h-20
-                  rounded-[28px]
-                  bg-gradient-to-br
-                  from-[#20232C]
-                  to-[#3A4254]
-                  text-white
-                  flex
-                  items-center
-                  justify-center
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-[32px]
+                  bg-white
+                  border
+                  border-black/5
+                  p-8
                   shadow-xl
-                  group-hover:scale-110
+                  hover:shadow-2xl
+                  hover:-translate-y-3
                   transition-all
                   duration-500
                 "
               >
-                <Icon
-                  size={34}
-                  strokeWidth={1.8}
+
+                {/* Glow Hover */}
+
+                <div
+                  className="
+                    absolute
+                    inset-0
+                    bg-gradient-to-br
+                    from-[#20232C]/5
+                    to-transparent
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-all
+                    duration-500
+                  "
                 />
+
+                <div className="relative z-10">
+
+                  {/* Icono */}
+
+                  <div
+                    className="
+                      w-20
+                      h-20
+                      rounded-[28px]
+                      bg-gradient-to-br
+                      from-[#20232C]
+                      to-[#3A4254]
+                      text-white
+                      flex
+                      items-center
+                      justify-center
+                      shadow-xl
+                      group-hover:scale-110
+                      transition-all
+                      duration-500
+                    "
+                  >
+                    <Icon
+                      size={34}
+                      strokeWidth={1.8}
+                    />
+                  </div>
+
+                  {/* Título */}
+
+                  <h3
+                    className="
+                      mt-8
+                      text-3xl
+                      font-bold
+                      text-[#20232C]
+                    "
+                  >
+                    {tema.title}
+                  </h3>
+
+                  {/* Descripción */}
+
+                  <p
+                    className="
+                      mt-4
+                      text-gray-600
+                      leading-7
+                    "
+                  >
+                    {tema.description}
+                  </p>
+
+                  {/* Footer Card */}
+
+                  <div
+                    className="
+                      mt-8
+                      flex
+                      items-center
+                      gap-2
+                      text-sm
+                      uppercase
+                      tracking-[3px]
+                      text-gray-500
+                    "
+                  >
+                    Congreso Familiar 2026
+                  </div>
+
+                </div>
+
               </div>
 
-              {/* Título */}
+            );
 
-              <h3
-                className="
-                  mt-8
-                  text-3xl
-                  font-bold
-                  text-[#20232C]
-                "
-              >
-                {tema.title}
-              </h3>
+          })}
 
-              {/* Descripción */}
+        </div>
 
-              <p
-                className="
-                  mt-4
-                  text-gray-600
-                  leading-7
-                "
-              >
-                {tema.description}
-              </p>
+        {/* Frase Inferior */}
 
-              {/* Footer Card */}
+        <div className="mt-24 text-center">
 
-              <div
-                className="
-                  mt-8
-                  flex
-                  items-center
-                  gap-2
-                  text-sm
-                  uppercase
-                  tracking-[3px]
-                  text-gray-500
-                "
-              >
-                Congreso Familiar 2026
-              </div>
+          <div
+            className="
+              max-w-5xl
+              mx-auto
+              bg-[#20232C]
+              text-white
+              rounded-[40px]
+              px-10
+              py-14
+              shadow-2xl
+            "
+          >
 
-            </div>
+            <p className="uppercase tracking-[4px] text-gray-300 text-sm">
+              Nuestro Propósito
+            </p>
+
+            <h3
+              className="
+                mt-6
+                text-3xl
+                md:text-5xl
+                font-light
+                leading-tight
+              "
+            >
+              Fortalecer familias, restaurar hogares y
+              levantar una generación que sirva a Dios.
+            </h3>
 
           </div>
 
-        );
-
-      })}
-
-    </div>
-
-    {/* Frase Inferior */}
-
-    <div className="mt-24 text-center">
-
-      <div
-        className="
-          max-w-5xl
-          mx-auto
-          bg-[#20232C]
-          text-white
-          rounded-[40px]
-          px-10
-          py-14
-          shadow-2xl
-        "
-      >
-
-        <p className="uppercase tracking-[4px] text-gray-300 text-sm">
-          Nuestro Propósito
-        </p>
-
-        <h3
-          className="
-            mt-6
-            text-3xl
-            md:text-5xl
-            font-light
-            leading-tight
-          "
-        >
-          Fortalecer familias, restaurar hogares y
-          levantar una generación que sirva a Dios.
-        </h3>
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
 
@@ -1186,620 +1186,620 @@ export default function Home() {
 
 
 
-{/* UBICACIÓN */}
-<section
-  id="ubicacion"
-  className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white"
->
-
-  {/* Glow */}
-  <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
-  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
-
-  <div className="relative z-10 max-w-7xl mx-auto">
-
-    {/* Encabezado */}
-    <div className="text-center">
-
-      <span
-        className="
-          inline-block
-          px-5
-          py-2
-          rounded-full
-          bg-white
-          border
-          border-black/10
-          shadow-lg
-          text-sm
-          uppercase
-          tracking-[4px]
-          text-gray-600
-        "
+      {/* UBICACIÓN */}
+      <section
+        id="ubicacion"
+        className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white"
       >
-        Cómo Llegar
-      </span>
 
-      <h2
-        className="
-          mt-8
-          text-5xl
-          md:text-7xl
-          font-black
-          uppercase
-          text-[#20232C]
-        "
+        {/* Glow */}
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+
+          {/* Encabezado */}
+          <div className="text-center">
+
+            <span
+              className="
+                inline-block
+                px-5
+                py-2
+                rounded-full
+                bg-white
+                border
+                border-black/10
+                shadow-lg
+                text-sm
+                uppercase
+                tracking-[4px]
+                text-gray-600
+              "
+            >
+              Cómo Llegar
+            </span>
+
+            <h2
+              className="
+                mt-8
+                text-5xl
+                md:text-7xl
+                font-black
+                uppercase
+                text-[#20232C]
+              "
+            >
+              Ubicación
+            </h2>
+
+            <p
+              className="
+                mt-8
+                max-w-3xl
+                mx-auto
+                text-xl
+                text-gray-600
+                leading-relaxed
+              "
+            >
+              Te esperamos para vivir juntos una experiencia
+              especial de crecimiento, aprendizaje y comunión.
+            </p>
+
+          </div>
+
+          {/* GRID */}
+          <div className="grid lg:grid-cols-2 gap-10 mt-20">
+
+            {/* INFORMACIÓN */}
+            <div
+              className="
+                bg-white
+                rounded-[40px]
+                p-10
+                shadow-2xl
+                border
+                border-black/5
+              "
+            >
+
+              {/* Icono principal */}
+              <div
+                className="
+                  w-20
+                  h-20
+                  rounded-3xl
+                  bg-gradient-to-br
+                  from-[#20232C]
+                  to-[#3A4150]
+                  text-white
+                  flex
+                  items-center
+                  justify-center
+                  shadow-2xl
+                "
+              >
+                <MapPin size={38} />
+              </div>
+
+              <h3
+                className="
+                  mt-8
+                  text-4xl
+                  font-bold
+                  text-[#20232C]
+                "
+              >
+                Iglesia Getsemaní
+              </h3>
+
+              <p className="mt-4 text-xl text-gray-600">
+                El Durazno, Hidalgo
+              </p>
+
+              <p className="text-gray-500 mt-2">
+                Congreso Familiar 2026
+              </p>
+
+              {/* Datos */}
+              <div className="mt-10 space-y-4">
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-4
+                    p-5
+                    rounded-2xl
+                    bg-gray-50
+                    border
+                    border-gray-100
+                  "
+                >
+                  <CalendarDays
+                    size={24}
+                    className="text-[#20232C]"
+                  />
+
+                  <span>
+                    Domingo 19 de Julio 2026
+                  </span>
+                </div>
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-4
+                    p-5
+                    rounded-2xl
+                    bg-gray-50
+                    border
+                    border-gray-100
+                  "
+                >
+                  <Clock3
+                    size={24}
+                    className="text-[#20232C]"
+                  />
+
+                  <span>
+                    10:00 AM
+                  </span>
+                </div>
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-4
+                    p-5
+                    rounded-2xl
+                    bg-gray-50
+                    border
+                    border-gray-100
+                  "
+                >
+                  <Users
+                    size={24}
+                    className="text-[#20232C]"
+                  />
+
+                  <span>
+                    Evento para toda la familia
+                  </span>
+                </div>
+
+              </div>
+
+              {/* Botón */}
+              <div className="mt-10">
+
+                <a
+                  href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    inline-flex
+                    items-center
+                    gap-3
+                    bg-[#20232C]
+                    text-white
+                    px-8
+                    py-4
+                    rounded-full
+                    font-semibold
+                    shadow-xl
+                    hover:scale-105
+                    transition-all
+                  "
+                >
+                  <Navigation size={20} />
+                  Cómo Llegar
+                </a>
+
+              </div>
+
+            </div>
+
+      {/* MAPA */}
+      <a
+      href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block group"
+
       >
-        Ubicación
-      </h2>
 
-      <p
-        className="
-          mt-8
-          max-w-3xl
-          mx-auto
-          text-xl
-          text-gray-600
-          leading-relaxed
-        "
-      >
-        Te esperamos para vivir juntos una experiencia
-        especial de crecimiento, aprendizaje y comunión.
-      </p>
+        <div
+          className="
+            relative
+            overflow-hidden
+            rounded-[40px]
+            shadow-2xl
+            min-h-[550px]
+            border
+            border-black/5
+            bg-white
+            cursor-pointer
+          "
+        >
 
-    </div>
+      {/* MAPA REAL */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.645156461913!2d-99.22245649999999!3d20.5207677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3e100639e8479%3A0xb538dad5f36e9ab5!2sIglesia%20Getsemani!5e0!3m2!1ses-419!2smx!4v1781995204367!5m2!1ses-419!2smx"
+        className="absolute inset-0 w-full h-full"
+        style={{ border: 0 }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
 
-    {/* GRID */}
-    <div className="grid lg:grid-cols-2 gap-10 mt-20">
+      {/* Card Inferior */}
 
-      {/* INFORMACIÓN */}
       <div
         className="
-          bg-white
-          rounded-[40px]
-          p-10
+          absolute
+          bottom-6
+          left-6
+          right-6
+          bg-white/95
+          backdrop-blur-xl
+          rounded-[32px]
+          p-6
           shadow-2xl
           border
           border-black/5
+          transition-all
+          duration-300
+          group-hover:scale-[1.02]
         "
       >
 
-        {/* Icono principal */}
-        <div
+        <p
           className="
-            w-20
-            h-20
-            rounded-3xl
-            bg-gradient-to-br
-            from-[#20232C]
-            to-[#3A4150]
-            text-white
-            flex
-            items-center
-            justify-center
-            shadow-2xl
+            text-xs
+            uppercase
+            tracking-[4px]
+            text-gray-500
           "
         >
-          <MapPin size={38} />
-        </div>
+          Congreso Familiar 2026
+        </p>
 
-        <h3
+        <h4
           className="
-            mt-8
-            text-4xl
+            mt-2
+            text-2xl
             font-bold
             text-[#20232C]
           "
         >
           Iglesia Getsemaní
-        </h3>
-
-        <p className="mt-4 text-xl text-gray-600">
-          El Durazno, Hidalgo
-        </p>
-
-        <p className="text-gray-500 mt-2">
-          Congreso Familiar 2026
-        </p>
-
-        {/* Datos */}
-        <div className="mt-10 space-y-4">
-
-          <div
-            className="
-              flex
-              items-center
-              gap-4
-              p-5
-              rounded-2xl
-              bg-gray-50
-              border
-              border-gray-100
-            "
-          >
-            <CalendarDays
-              size={24}
-              className="text-[#20232C]"
-            />
-
-            <span>
-              Domingo 19 de Julio 2026
-            </span>
-          </div>
-
-          <div
-            className="
-              flex
-              items-center
-              gap-4
-              p-5
-              rounded-2xl
-              bg-gray-50
-              border
-              border-gray-100
-            "
-          >
-            <Clock3
-              size={24}
-              className="text-[#20232C]"
-            />
-
-            <span>
-              10:00 AM
-            </span>
-          </div>
-
-          <div
-            className="
-              flex
-              items-center
-              gap-4
-              p-5
-              rounded-2xl
-              bg-gray-50
-              border
-              border-gray-100
-            "
-          >
-            <Users
-              size={24}
-              className="text-[#20232C]"
-            />
-
-            <span>
-              Evento para toda la familia
-            </span>
-          </div>
-
-        </div>
-
-        {/* Botón */}
-        <div className="mt-10">
-
-          <a
-            href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              inline-flex
-              items-center
-              gap-3
-              bg-[#20232C]
-              text-white
-              px-8
-              py-4
-              rounded-full
-              font-semibold
-              shadow-xl
-              hover:scale-105
-              transition-all
-            "
-          >
-            <Navigation size={20} />
-            Cómo Llegar
-          </a>
-
-        </div>
-
-      </div>
-
-{/* MAPA */}
-<a
-href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-target="_blank"
-rel="noopener noreferrer"
-className="block group"
-
->
-
-  <div
-    className="
-      relative
-      overflow-hidden
-      rounded-[40px]
-      shadow-2xl
-      min-h-[550px]
-      border
-      border-black/5
-      bg-white
-      cursor-pointer
-    "
-  >
-
-{/* MAPA REAL */}
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.645156461913!2d-99.22245649999999!3d20.5207677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3e100639e8479%3A0xb538dad5f36e9ab5!2sIglesia%20Getsemani!5e0!3m2!1ses-419!2smx!4v1781995204367!5m2!1ses-419!2smx"
-  className="absolute inset-0 w-full h-full"
-  style={{ border: 0 }}
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-
-{/* Card Inferior */}
-
-<div
-  className="
-    absolute
-    bottom-6
-    left-6
-    right-6
-    bg-white/95
-    backdrop-blur-xl
-    rounded-[32px]
-    p-6
-    shadow-2xl
-    border
-    border-black/5
-    transition-all
-    duration-300
-    group-hover:scale-[1.02]
-  "
->
-
-  <p
-    className="
-      text-xs
-      uppercase
-      tracking-[4px]
-      text-gray-500
-    "
-  >
-    Congreso Familiar 2026
-  </p>
-
-  <h4
-    className="
-      mt-2
-      text-2xl
-      font-bold
-      text-[#20232C]
-    "
-  >
-    Iglesia Getsemaní
-  </h4>
-
-  <p className="text-gray-600 mt-2">
-    42310, El Durazno, Hidalgo
-  </p>
-
-  <div
-    className="
-      mt-4
-      flex
-      items-center
-      gap-2
-      text-[#20232C]
-      font-medium
-    "
-  >
-
-    <Navigation size={18} />
-
-    <span>
-      Abrir ruta en Google Maps
-    </span>
-
-  </div>
-
-</div>
-
-  </div>
-
-</a>
-
-
-
-
-    </div>
-
-    {/* FRASE FINAL */}
-    <div className="mt-24">
-
-      <div
-        className="
-          max-w-5xl
-          mx-auto
-          bg-[#20232C]
-          text-white
-          rounded-[40px]
-          px-12
-          py-14
-          text-center
-          shadow-2xl
-        "
-      >
-
-        <p
-          className="
-            uppercase
-            tracking-[4px]
-            text-gray-300
-            text-sm
-          "
-        >
-          Nos vemos pronto
-        </p>
-
-        <h3
-          className="
-            mt-6
-            text-3xl
-            md:text-5xl
-            font-light
-            leading-tight
-          "
-        >
-          Prepara tu corazón, reúne a tu familia
-          y acompáñanos en este tiempo especial.
-        </h3>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-
-
-{/* FOOTER */}
-
-<footer className="relative overflow-hidden bg-[#20232C] text-white">
-
-  {/* Glow decorativo */}
-
-  <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-
-  <div className="relative z-10 max-w-7xl mx-auto px-6">
-
-    {/* CTA FINAL */}
-
-    <div className="py-28 text-center border-b border-white/10">
-
-      <span
-        className="
-          inline-block
-          px-5
-          py-2
-          rounded-full
-          bg-white/10
-          backdrop-blur-md
-          border
-          border-white/10
-          text-sm
-          uppercase
-          tracking-[4px]
-          text-gray-300
-        "
-      >
-        Congreso Familiar 2026
-      </span>
-
-      <h2
-        className="
-          mt-8
-          text-5xl
-          md:text-7xl
-          font-black
-          uppercase
-          leading-tight
-        "
-      >
-        Te Esperamos
-      </h2>
-
-      <p
-        className="
-          mt-8
-          max-w-3xl
-          mx-auto
-          text-xl
-          text-gray-300
-          leading-relaxed
-        "
-      >
-        Un día para fortalecer la familia,
-        renovar la fe y crecer juntos en los
-        principios que Dios estableció para el hogar.
-      </p>
-
-    </div>
-
-    {/* FOOTER PRINCIPAL */}
-
-    <div className="py-16 grid md:grid-cols-3 gap-14">
-
-      {/* Marca */}
-
-      <div>
-
-        <h3
-          className="
-            text-4xl
-            font-black
-            uppercase
-            leading-none
-          "
-        >
-          Congreso
-          <br />
-          Familiar
-        </h3>
-
-        <p
-          className="
-            mt-6
-            text-gray-400
-            leading-8
-            text-lg
-          "
-        >
-          Una jornada diseñada para fortalecer
-          matrimonios, padres, hijos y familias
-          completas mediante la enseñanza de la
-          Palabra de Dios.
-        </p>
-
-      </div>
-
-      {/* Información */}
-
-      <div>
-
-        <h4
-          className="
-            text-lg
-            uppercase
-            tracking-[4px]
-            mb-8
-          "
-        >
-          Información
         </h4>
 
-        <div className="space-y-5">
-
-          <div className="flex items-center gap-4 text-gray-300">
-
-            <CalendarDays size={18} />
-
-            <span>
-              19 de Julio 2026
-            </span>
-
-          </div>
-
-          <div className="flex items-center gap-4 text-gray-300">
-
-            <Clock3 size={18} />
-
-            <span>
-              10:00 AM
-            </span>
-
-          </div>
-
-          <div className="flex items-center gap-4 text-gray-300">
-
-            <MapPin size={18} />
-
-            <span>
-              Iglesia Getsemaní
-            </span>
-
-          </div>
-
-          <div className="flex items-center gap-4 text-gray-300">
-
-            <MapPin size={18} />
-
-            <span>
-              El Durazno, Hidalgo
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      {/* Versículo */}
-
-      <div>
-
-        <div className="flex items-center gap-3 mb-6">
-
-          <BookOpen size={20} />
-
-          <h4
-            className="
-              text-lg
-              uppercase
-              tracking-[4px]
-            "
-          >
-            Versículo Tema
-          </h4>
-
-        </div>
-
-        <blockquote
-          className="
-            text-3xl
-            leading-relaxed
-            text-gray-200
-            italic
-            font-light
-          "
-        >
-          “Pero yo y mi casa
-          serviremos a Jehová.”
-        </blockquote>
-
-        <p className="mt-6 text-gray-500">
-          Josué 24:15
+        <p className="text-gray-600 mt-2">
+          42310, El Durazno, Hidalgo
         </p>
 
+        <div
+          className="
+            mt-4
+            flex
+            items-center
+            gap-2
+            text-[#20232C]
+            font-medium
+          "
+        >
+
+          <Navigation size={18} />
+
+          <span>
+            Abrir ruta en Google Maps
+          </span>
+
+        </div>
+
       </div>
 
-    </div>
+        </div>
 
-    {/* COPYRIGHT */}
+      </a>
 
-    <div
-      className="
-        border-t
-        border-white/10
-        py-8
-        flex
-        flex-col
-        md:flex-row
-        justify-between
-        items-center
-        gap-4
-      "
-    >
 
-      <p className="text-gray-500 text-sm">
-        © 2026 Congreso Familiar.
-        Todos los derechos reservados.
-      </p>
 
-      <p className="text-gray-500 text-sm text-center">
-        Movimiento de la Iglesia Pentecostés de México, A.R.
-      </p>
 
-    </div>
+          </div>
 
-  </div>
+          {/* FRASE FINAL */}
+          <div className="mt-24">
 
-</footer>
+            <div
+              className="
+                max-w-5xl
+                mx-auto
+                bg-[#20232C]
+                text-white
+                rounded-[40px]
+                px-12
+                py-14
+                text-center
+                shadow-2xl
+              "
+            >
+
+              <p
+                className="
+                  uppercase
+                  tracking-[4px]
+                  text-gray-300
+                  text-sm
+                "
+              >
+                Nos vemos pronto
+              </p>
+
+              <h3
+                className="
+                  mt-6
+                  text-3xl
+                  md:text-5xl
+                  font-light
+                  leading-tight
+                "
+              >
+                Prepara tu corazón, reúne a tu familia
+                y acompáñanos en este tiempo especial.
+              </h3>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+        {/* FOOTER */}
+
+        <footer className="relative overflow-hidden bg-[#20232C] text-white">
+
+          {/* Glow decorativo */}
+
+          <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
+
+          <div className="relative z-10 max-w-7xl mx-auto px-6">
+
+            {/* CTA FINAL */}
+
+            <div className="py-28 text-center border-b border-white/10">
+
+              <span
+                className="
+                  inline-block
+                  px-5
+                  py-2
+                  rounded-full
+                  bg-white/10
+                  backdrop-blur-md
+                  border
+                  border-white/10
+                  text-sm
+                  uppercase
+                  tracking-[4px]
+                  text-gray-300
+                "
+              >
+                Congreso Familiar 2026
+              </span>
+
+              <h2
+                className="
+                  mt-8
+                  text-5xl
+                  md:text-7xl
+                  font-black
+                  uppercase
+                  leading-tight
+                "
+              >
+                Te Esperamos
+              </h2>
+
+              <p
+                className="
+                  mt-8
+                  max-w-3xl
+                  mx-auto
+                  text-xl
+                  text-gray-300
+                  leading-relaxed
+                "
+              >
+                Un día para fortalecer la familia,
+                renovar la fe y crecer juntos en los
+                principios que Dios estableció para el hogar.
+              </p>
+
+            </div>
+
+            {/* FOOTER PRINCIPAL */}
+
+            <div className="py-16 grid md:grid-cols-3 gap-14">
+
+              {/* Marca */}
+
+              <div>
+
+                <h3
+                  className="
+                    text-4xl
+                    font-black
+                    uppercase
+                    leading-none
+                  "
+                >
+                  Congreso
+                  <br />
+                  Familiar
+                </h3>
+
+                <p
+                  className="
+                    mt-6
+                    text-gray-400
+                    leading-8
+                    text-lg
+                  "
+                >
+                  Una jornada diseñada para fortalecer
+                  matrimonios, padres, hijos y familias
+                  completas mediante la enseñanza de la
+                  Palabra de Dios.
+                </p>
+
+              </div>
+
+              {/* Información */}
+
+              <div>
+
+                <h4
+                  className="
+                    text-lg
+                    uppercase
+                    tracking-[4px]
+                    mb-8
+                  "
+                >
+                  Información
+                </h4>
+
+                <div className="space-y-5">
+
+                  <div className="flex items-center gap-4 text-gray-300">
+
+                    <CalendarDays size={18} />
+
+                    <span>
+                      19 de Julio 2026
+                    </span>
+
+                  </div>
+
+                  <div className="flex items-center gap-4 text-gray-300">
+
+                    <Clock3 size={18} />
+
+                    <span>
+                      10:00 AM
+                    </span>
+
+                  </div>
+
+                  <div className="flex items-center gap-4 text-gray-300">
+
+                    <MapPin size={18} />
+
+                    <span>
+                      Iglesia Getsemaní
+                    </span>
+
+                  </div>
+
+                  <div className="flex items-center gap-4 text-gray-300">
+
+                    <MapPin size={18} />
+
+                    <span>
+                      El Durazno, Hidalgo
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Versículo */}
+
+              <div>
+
+                <div className="flex items-center gap-3 mb-6">
+
+                  <BookOpen size={20} />
+
+                  <h4
+                    className="
+                      text-lg
+                      uppercase
+                      tracking-[4px]
+                    "
+                  >
+                    Versículo Tema
+                  </h4>
+
+                </div>
+
+                <blockquote
+                  className="
+                    text-3xl
+                    leading-relaxed
+                    text-gray-200
+                    italic
+                    font-light
+                  "
+                >
+                  “Pero yo y mi casa
+                  serviremos a Jehová.”
+                </blockquote>
+
+                <p className="mt-6 text-gray-500">
+                  Josué 24:15
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* COPYRIGHT */}
+
+            <div
+              className="
+                border-t
+                border-white/10
+                py-8
+                flex
+                flex-col
+                md:flex-row
+                justify-between
+                items-center
+                gap-4
+              "
+            >
+
+              <p className="text-gray-500 text-sm">
+                © 2026 Congreso Familiar.
+                Todos los derechos reservados.
+              </p>
+
+              <p className="text-gray-500 text-sm text-center">
+                Movimiento de la Iglesia Pentecostés de México, A.R.
+              </p>
+
+            </div>
+
+          </div>
+
+        </footer>
 
 
     </main>
