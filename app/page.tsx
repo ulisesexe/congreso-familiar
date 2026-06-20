@@ -799,182 +799,338 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 
 {/* PROGRAMA */}
-
 <section className="relative py-36 px-6 overflow-hidden bg-[#20232C] text-white">
 
-{/* Glow Fondo */}
-
+  {/* Glow Fondo */}
   <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-white/5 rounded-full blur-3xl" />
   <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
 
   <div className="relative z-10 max-w-7xl mx-auto">
 
+    {/* Encabezado */}
+    <div className="text-center">
 
-{/* Encabezado */}
-<div className="text-center">
-
-  <span
-    className="
-      inline-block
-      px-5
-      py-2
-      rounded-full
-      bg-white/10
-      border
-      border-white/10
-      backdrop-blur-md
-      text-sm
-      uppercase
-      tracking-[4px]
-      text-gray-300
-    "
-  >
-    Agenda del Evento
-  </span>
-
-  <h2
-    className="
-      mt-8
-      text-5xl
-      md:text-7xl
-      font-black
-      uppercase
-    "
-  >
-    Programa
-  </h2>
-
-  <p
-    className="
-      mt-8
-      max-w-3xl
-      mx-auto
-      text-xl
-      text-gray-300
-      leading-relaxed
-    "
-  >
-    Un día especial para aprender, adorar y fortalecer
-    nuestras familias conforme a la Palabra de Dios.
-  </p>
-
-</div>
-
-{/* Timeline */}
-<div className="mt-24 max-w-5xl mx-auto">
-
-  {[
-    {
-      time: "10:00 - 10:10",
-      title: "Bienvenida, Lectura Bíblica y Oración",
-      description:
-        "Inicio oficial del Congreso Familiar con lectura bíblica y oración."
-    },
-    {
-      time: "10:10 - 10:50",
-      title: "Alabanzas",
-      description:
-        "Tiempo especial de adoración dirigido por el grupo de alabanza."
-    },
-    {
-      time: "10:50 - 12:00",
-      title: "1ª Conferencia General",
-      description:
-        "Tema: 'Pero yo y mi casa serviremos a Jehová'."
-    },
-    {
-      time: "12:00 - 12:30",
-      title: "Alabanzas",
-      description:
-        "Momento de adoración y gratitud a Dios."
-    },
-    {
-      time: "12:30 - 12:50",
-      title: "Oración por las Familias",
-      description:
-        "Intercesión especial por matrimonios, hijos y hogares."
-    },
-    {
-      time: "12:50 - 1:50",
-      title: "Talleres Especializados",
-      description:
-        "Sesiones simultáneas para diferentes grupos de la congregación."
-    },
-    {
-      time: "1:50 - 2:50",
-      title: "2ª Conferencia General",
-      description:
-        "Enseñanza enfocada en fortalecer los principios cristianos en el hogar."
-    },
-    {
-      time: "Clausura",
-      title: "Oración por las Ofrendas",
-      description:
-        "Momento final de agradecimiento y cierre del Congreso."
-    }
-  ].map((item, index, array) => (
-
-    <div
-      key={index}
-      className="
-        relative
-        flex
-        gap-6
-        mb-12
-        group
-      "
-    >
-
-      {index !== array.length - 1 && (
-
-        <div
-          className="
-            absolute
-            left-[39px]
-            top-20
-            w-[2px]
-            h-[150px]
-            bg-white/15
-          "
-        />
-
-      )}
-
-      <div
+      <span
         className="
-          flex-shrink-0
-          w-20
-          h-20
+          inline-block
+          px-5
+          py-2
           rounded-full
-          bg-white
-          text-[#20232C]
-          flex
-          items-center
-          justify-center
-          text-xl
-          shadow-2xl
-          group-hover:scale-110
-          transition-all
+          bg-white/10
+          border
+          border-white/10
+          backdrop-blur-md
+          text-sm
+          uppercase
+          tracking-[4px]
+          text-gray-300
         "
       >
-        ●
-      </div>
+        Agenda del Evento
+      </span>
+
+      <h2
+        className="
+          mt-8
+          text-5xl
+          md:text-7xl
+          font-black
+          uppercase
+        "
+      >
+        Programa
+      </h2>
+
+      <p
+        className="
+          mt-8
+          max-w-3xl
+          mx-auto
+          text-xl
+          text-gray-300
+          leading-relaxed
+        "
+      >
+        Un día especial para aprender, adorar y fortalecer
+        nuestras familias conforme a la Palabra de Dios.
+      </p>
+
+    </div>
+
+    {/* Timeline */}
+    <div className="mt-24 max-w-5xl mx-auto">
+
+      {[
+        {
+          time: "10:00 - 10:10",
+          title: "Bienvenida, Lectura Bíblica y Oración",
+          description:
+            "Inicio oficial del Congreso Familiar con lectura bíblica y oración."
+        },
+        {
+          time: "10:10 - 10:50",
+          title: "Alabanzas",
+          description:
+            "Tiempo especial de adoración dirigido por el grupo de alabanza."
+        },
+        {
+          time: "10:50 - 12:00",
+          title: "1ª Conferencia General",
+          description:
+            "Tema: 'Pero yo y mi casa serviremos a Jehová'."
+        },
+        {
+          time: "12:00 - 12:30",
+          title: "Alabanzas",
+          description:
+            "Momento de adoración y gratitud a Dios."
+        },
+        {
+          time: "12:30 - 12:50",
+          title: "Oración por las Familias",
+          description:
+            "Intercesión especial por matrimonios, hijos y hogares."
+        },
+        {
+          time: "12:50 - 1:50",
+          title: "Talleres Especializados",
+          description:
+            "Sesiones simultáneas para diferentes grupos de la congregación.",
+          workshops: [
+            "Varones",
+            "Femenil",
+            "Jóvenes y Adolescentes",
+            "Infantil"
+          ]
+        },
+        {
+          time: "1:50 - 2:50",
+          title: "2ª Conferencia General",
+          description:
+            "Enseñanza enfocada en fortalecer los principios cristianos en el hogar."
+        },
+        {
+          time: "Clausura",
+          title: "Oración por las Ofrendas",
+          description:
+            "Momento final de agradecimiento y cierre del Congreso."
+        }
+      ].map((item, index, array) => (
+
+        <div
+          key={index}
+          className="
+            relative
+            flex
+            gap-6
+            mb-12
+            group
+          "
+        >
+
+          {index !== array.length - 1 && (
+
+            <div
+              className="
+                absolute
+                left-[39px]
+                top-20
+                w-[2px]
+                h-[160px]
+                bg-white/15
+              "
+            />
+
+          )}
+
+          {/* Nodo */}
+          <div
+            className="
+              flex-shrink-0
+              w-20
+              h-20
+              rounded-full
+              bg-white
+              text-[#20232C]
+              flex
+              items-center
+              justify-center
+              text-xl
+              shadow-2xl
+              group-hover:scale-110
+              transition-all
+            "
+          >
+            ●
+          </div>
+
+          {/* Card */}
+          <div
+            className="
+              flex-1
+              bg-white/5
+              border
+              border-white/10
+              backdrop-blur-xl
+              rounded-[32px]
+              p-8
+              hover:bg-white/10
+              transition-all
+            "
+          >
+
+            <span
+              className="
+                text-sm
+                uppercase
+                tracking-[4px]
+                text-gray-400
+              "
+            >
+              {item.time}
+            </span>
+
+            <h3
+              className="
+                mt-3
+                text-2xl
+                md:text-3xl
+                font-bold
+              "
+            >
+              {item.title}
+            </h3>
+
+            <p
+              className="
+                mt-4
+                text-gray-300
+                leading-7
+              "
+            >
+              {item.description}
+            </p>
+
+            {/* Talleres simultáneos */}
+            {item.workshops && (
+
+              <div className="mt-8">
+
+                <div
+                  className="
+                    inline-flex
+                    items-center
+                    gap-2
+                    px-4
+                    py-2
+                    rounded-full
+                    bg-amber-500/15
+                    border
+                    border-amber-500/20
+                    text-amber-300
+                    text-xs
+                    uppercase
+                    tracking-[3px]
+                    mb-8
+                  "
+                >
+                  Simultáneos
+                </div>
+
+                <div className="relative">
+
+                  <div
+                    className="
+                      absolute
+                      left-[8px]
+                      top-2
+                      bottom-2
+                      w-[1px]
+                      bg-white/15
+                    "
+                  />
+
+                  <div className="space-y-5">
+
+                    {item.workshops.map((workshop) => (
+
+                      <div
+                        key={workshop}
+                        className="
+                          relative
+                          flex
+                          items-center
+                          gap-4
+                        "
+                      >
+
+                        <div
+                          className="
+                            w-4
+                            h-4
+                            rounded-full
+                            bg-white
+                            border-4
+                            border-[#20232C]
+                            z-10
+                          "
+                        />
+
+                        <div
+                          className="
+                            flex-1
+                            bg-white/5
+                            border
+                            border-white/10
+                            rounded-2xl
+                            px-5
+                            py-3
+                            backdrop-blur-xl
+                          "
+                        >
+                          {workshop}
+                        </div>
+
+                      </div>
+
+                    ))}
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            )}
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+    {/* Card Final */}
+    <div className="mt-24">
 
       <div
         className="
-          flex-1
-          bg-white/5
+          max-w-5xl
+          mx-auto
+          rounded-[40px]
+          bg-gradient-to-r
+          from-white/10
+          to-white/5
           border
           border-white/10
           backdrop-blur-xl
-          rounded-[32px]
-          p-8
-          hover:bg-white/10
-          transition-all
+          p-12
+          text-center
         "
       >
 
-        <span
+        <p
           className="
             text-sm
             uppercase
@@ -982,151 +1138,28 @@ className="relative z-10 w-full max-w-7xl text-center"
             text-gray-400
           "
         >
-          {item.time}
-        </span>
+          Tema del Congreso
+        </p>
 
         <h3
           className="
-            mt-3
-            text-2xl
-            md:text-3xl
-            font-bold
+            mt-6
+            text-3xl
+            md:text-5xl
+            font-light
+            leading-tight
           "
         >
-          {item.title}
+          “Pero yo y mi casa serviremos a Jehová”
         </h3>
 
-        <p
-          className="
-            mt-4
-            text-gray-300
-            leading-7
-          "
-        >
-          {item.description}
+        <p className="mt-6 text-gray-300 text-lg">
+          Josué 24:15
         </p>
 
       </div>
 
     </div>
-
-  ))}
-
-</div>
-
-{/* Talleres */}
-<div className="mt-24">
-
-  <div className="text-center mb-10">
-
-    <p
-      className="
-        uppercase
-        tracking-[5px]
-        text-gray-400
-      "
-    >
-      Talleres Simultáneos
-    </p>
-
-  </div>
-
-  <div
-    className="
-      max-w-6xl
-      mx-auto
-      grid
-      grid-cols-2
-      md:grid-cols-4
-      gap-5
-    "
-  >
-
-    {[
-      "👨 Varones",
-      "👩 Femenil",
-      "🧑 Juvenil",
-      "🧒 Infantil"
-    ].map((taller) => (
-
-      <div
-        key={taller}
-        className="
-          bg-white/5
-          border
-          border-white/10
-          backdrop-blur-xl
-          rounded-[28px]
-          p-8
-          text-center
-          hover:bg-white/10
-          transition-all
-        "
-      >
-
-        <h3 className="text-2xl font-semibold">
-          {taller}
-        </h3>
-
-      </div>
-
-    ))}
-
-  </div>
-
-</div>
-
-{/* Cierre */}
-<div className="mt-24">
-
-  <div
-    className="
-      max-w-5xl
-      mx-auto
-      rounded-[40px]
-      bg-gradient-to-r
-      from-white/10
-      to-white/5
-      border
-      border-white/10
-      backdrop-blur-xl
-      p-12
-      text-center
-    "
-  >
-
-    <p
-      className="
-        text-sm
-        uppercase
-        tracking-[4px]
-        text-gray-400
-      "
-    >
-      Tema del Congreso
-    </p>
-
-    <h3
-      className="
-        mt-6
-        text-3xl
-        md:text-5xl
-        font-light
-        leading-tight
-      "
-    >
-      “Pero yo y mi casa
-      serviremos a Jehová”
-    </h3>
-
-    <p className="mt-6 text-gray-300 text-lg">
-      Josué 24:15
-    </p>
-
-  </div>
-
-</div>
-
 
   </div>
 
