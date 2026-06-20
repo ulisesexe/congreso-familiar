@@ -50,7 +50,7 @@ className="relative z-10 w-full max-w-7xl text-center"
       md:tracking-[5px]
     "
   >
-    Congreso Familiar 2026
+    Congreso Familiar 2027
   </span>
 </div>
 
