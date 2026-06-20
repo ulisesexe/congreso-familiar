@@ -12,10 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Congreso Familiar 2026 | Iglesia Getsemaní",
   description:
     "Congreso Familiar 2026. Un tiempo especial para fortalecer las familias mediante conferencias, talleres y enseñanza bíblica.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
