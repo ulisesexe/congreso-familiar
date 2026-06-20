@@ -6,204 +6,248 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-      {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-6">
+{/* HERO */}
 
-        {/* Glow Fondo */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 blur-3xl rounded-full" />
+<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-5 md:px-8">
 
-        {/* Glow secundario */}
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#20232C]/5 blur-3xl rounded-full" />
+{/* Glow */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2 }}
-          className="relative z-10 text-center max-w-7xl"
-        >
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-white/40 blur-3xl rounded-full" />
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-black/10 bg-white/60 backdrop-blur-md shadow-lg mb-8">
+<motion.div
+initial={{ opacity: 0, y: 60 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ duration: 1 }}
+className="relative z-10 w-full max-w-7xl text-center"
 
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+>
 
-            <span className="text-sm font-medium tracking-widest uppercase">
-              Congreso Familiar 2026
-            </span>
+{/* Badge */}
+<div
+  className="
+    inline-flex
+    items-center
+    gap-3
+    px-5
+    py-3
+    rounded-full
+    bg-white/80
+    backdrop-blur-xl
+    shadow-xl
+    border
+    border-black/5
+  "
+>
+  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
 
-          </div>
+  <span
+    className="
+      text-xs
+      md:text-sm
+      font-medium
+      uppercase
+      tracking-[3px]
+      md:tracking-[5px]
+    "
+  >
+    Congreso Familiar 2026
+  </span>
+</div>
 
-          {/* Titulo Principal */}
-          <div className="space-y-2">
+{/* TITULO */}
+<div className="mt-10">
 
-            <h1
-              className="
-                text-7xl
-                md:text-[12rem]
-                font-black
-                uppercase
-                leading-none
-                tracking-tight
-                text-[#20232C]
-              "
-            >
-              Congreso
-            </h1>
+  <h1
+    className="
+      text-[4rem]
+      sm:text-[5rem]
+      md:text-[8rem]
+      lg:text-[11rem]
+      font-black
+      uppercase
+      leading-[0.9]
+      tracking-tight
+      text-[#20232C]
+    "
+  >
+    Congreso
+  </h1>
 
-            <h2
-              className="
-                text-6xl
-                md:text-[10rem]
-                font-black
-                uppercase
-                leading-none
-                bg-gradient-to-r
-                from-[#20232C]
-                via-[#4B5563]
-                to-[#20232C]
-                bg-clip-text
-                text-transparent
-              "
-            >
-              Familiar
-            </h2>
+  <h2
+    className="
+      text-[3.5rem]
+      sm:text-[4.5rem]
+      md:text-[7rem]
+      lg:text-[9rem]
+      font-black
+      uppercase
+      leading-[0.9]
+      bg-gradient-to-r
+      from-[#20232C]
+      via-[#4B5563]
+      to-[#20232C]
+      bg-clip-text
+      text-transparent
+    "
+  >
+    Familiar
+  </h2>
 
-          </div>
+</div>
 
-          {/* Línea decorativa */}
-          <div className="w-40 h-[3px] bg-[#20232C] mx-auto mt-10 rounded-full" />
+{/* Línea */}
+<div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-8 rounded-full" />
 
-          {/* Versículo */}
-          <div className="mt-14 max-w-4xl mx-auto">
+{/* Versículo */}
+<div className="mt-10 max-w-4xl mx-auto">
 
-            <h3
-              className="
-                text-3xl
-                md:text-6xl
-                font-light
-                leading-tight
-                text-[#20232C]
-              "
-            >
-              “Pero yo y mi casa
-              <br />
-              serviremos a Jehová”
-            </h3>
+  <h3
+    className="
+      text-2xl
+      sm:text-3xl
+      md:text-5xl
+      font-light
+      leading-tight
+      text-[#20232C]
+    "
+  >
+    “Pero yo y mi casa
+    <br />
+    serviremos a Jehová”
+  </h3>
 
-            <p className="mt-6 text-xl md:text-2xl text-gray-600 tracking-wide">
-              Josué 24:15
-            </p>
+  <p className="mt-5 text-lg md:text-2xl text-gray-600">
+    Josué 24:15
+  </p>
 
-          </div>
+</div>
 
-          {/* Información */}
-          <div className="mt-14 flex flex-wrap justify-center gap-4">
+{/* DATOS */}
+<div
+  className="
+    mt-12
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    gap-5
+    max-w-4xl
+    mx-auto
+  "
+>
 
-            <div className="px-6 py-4 rounded-2xl bg-white shadow-xl border border-black/5">
-              <p className="text-xs uppercase tracking-widest text-gray-500">
-                Fecha
-              </p>
-              <p className="font-semibold">
-                19 Julio 2026
-              </p>
-            </div>
+  <div
+    className="
+      bg-white/80
+      backdrop-blur-xl
+      rounded-3xl
+      p-6
+      shadow-xl
+    "
+  >
+    <p className="text-sm uppercase tracking-[4px] text-gray-500">
+      Fecha
+    </p>
 
-            <div className="px-6 py-4 rounded-2xl bg-white shadow-xl border border-black/5">
-              <p className="text-xs uppercase tracking-widest text-gray-500">
-                Hora
-              </p>
-              <p className="font-semibold">
-                10:00 AM
-              </p>
-            </div>
+    <p className="mt-2 text-2xl font-bold">
+      19 Julio 2026
+    </p>
+  </div>
 
-            <div className="px-6 py-4 rounded-2xl bg-white shadow-xl border border-black/5">
-              <p className="text-xs uppercase tracking-widest text-gray-500">
-                Lugar
-              </p>
-              <p className="font-semibold">
-                Iglesia Getsemaní
-              </p>
-            </div>
+  <div
+    className="
+      bg-white/80
+      backdrop-blur-xl
+      rounded-3xl
+      p-6
+      shadow-xl
+    "
+  >
+    <p className="text-sm uppercase tracking-[4px] text-gray-500">
+      Hora
+    </p>
 
-          </div>
+    <p className="mt-2 text-2xl font-bold">
+      10:00 AM
+    </p>
+  </div>
 
-          {/* Botones */}
-          <div className="mt-14 flex flex-wrap justify-center gap-5">
+  <div
+    className="
+      bg-white/80
+      backdrop-blur-xl
+      rounded-3xl
+      p-6
+      shadow-xl
+      sm:col-span-2
+      lg:col-span-1
+    "
+  >
+    <p className="text-sm uppercase tracking-[4px] text-gray-500">
+      Lugar
+    </p>
 
-            <button
-              className="
-                group
-                relative
-                overflow-hidden
-                px-10
-                py-5
-                rounded-full
-                bg-[#20232C]
-                text-white
-                font-semibold
-                shadow-2xl
-                transition-all
-                duration-300
-                hover:scale-105
-              "
-            >
-              <span className="relative z-10">
-                Confirmar Asistencia
-              </span>
+    <p className="mt-2 text-2xl font-bold">
+      Iglesia Getsemaní
+    </p>
+  </div>
 
-              <div
-                className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-r
-                  from-white/0
-                  via-white/20
-                  to-white/0
-                  -translate-x-full
-                  group-hover:translate-x-full
-                  transition-transform
-                  duration-1000
-                "
-              />
-            </button>
+</div>
 
-            <button
-              className="
-                px-10
-                py-5
-                rounded-full
-                border-2
-                border-[#20232C]
-                bg-white/70
-                backdrop-blur-md
-                font-semibold
-                hover:bg-white
-                hover:scale-105
-                transition-all
-                duration-300
-              "
-            >
-              Ver Ubicación
-            </button>
+{/* BOTONES */}
+<div
+  className="
+    mt-12
+    flex
+    flex-col
+    sm:flex-row
+    justify-center
+    gap-4
+  "
+>
 
-          </div>
+  <button
+    className="
+      bg-[#20232C]
+      text-white
+      px-8
+      py-4
+      rounded-full
+      font-semibold
+      shadow-xl
+      hover:scale-105
+      transition-all
+    "
+  >
+    Confirmar Asistencia
+  </button>
 
-          {/* Scroll Indicator */}
-          <div className="mt-20 flex flex-col items-center">
+  <button
+    className="
+      border-2
+      border-[#20232C]
+      px-8
+      py-4
+      rounded-full
+      font-semibold
+      hover:bg-[#20232C]
+      hover:text-white
+      transition-all
+    "
+  >
+    Ver Ubicación
+  </button>
 
-            <span className="text-xs uppercase tracking-[4px] text-gray-500 mb-3">
-              Scroll
-            </span>
-
-            <div className="w-[2px] h-16 bg-gradient-to-b from-[#20232C] to-transparent" />
-
-          </div>
-
-        </motion.div>
+</div>
 
 
-      </section>
+</motion.div>
+
+</section>
+
+
+
+
 
 
 
