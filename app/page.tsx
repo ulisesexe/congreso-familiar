@@ -22,7 +22,6 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 >
 
-```
 {/* Badge */}
 <div
   className="
@@ -230,40 +229,57 @@ className="relative z-10 w-full max-w-7xl text-center"
   "
 >
 
-  <button
+
+
+{/* BOTON */}
+<div className="mt-10 flex justify-center">
+
+  <a
+    href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+    target="_blank"
+    rel="noopener noreferrer"
     className="
+      group
+      relative
+      overflow-hidden
       bg-[#20232C]
       text-white
-      px-8
-      py-4
+      px-10
+      py-5
       rounded-full
       font-semibold
       shadow-2xl
       hover:scale-105
       transition-all
+      duration-300
     "
   >
-    Confirmar Asistencia
-  </button>
 
-  <button
-    className="
-      border-2
-      border-[#20232C]
-      px-8
-      py-4
-      rounded-full
-      font-semibold
-      hover:bg-[#20232C]
-      hover:text-white
-      transition-all
-    "
-  >
-    Ver Ubicación
-  </button>
+    <span className="relative z-10 flex items-center gap-3">
+      📍 Ver Ubicación
+    </span>
+
+    <div
+      className="
+        absolute
+        inset-0
+        bg-gradient-to-r
+        from-white/0
+        via-white/20
+        to-white/0
+        -translate-x-full
+        group-hover:translate-x-full
+        transition-transform
+        duration-1000
+      "
+    />
+
+  </a>
 
 </div>
-```
+
+</div>
+
 
 </motion.div>
 
