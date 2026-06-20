@@ -911,10 +911,16 @@ export default function Home() {
                   "Enseñanza enfocada en fortalecer los principios cristianos en el hogar."
               },
               {
-                time: "Clausura",
+                time: "2:50 - 3:00",
                 title: "Oración por las Ofrendas",
                 description:
-                  "Momento final de agradecimiento y cierre del Congreso."
+                  "Momento especial de gratitud a Dios y presentación de las ofrendas."
+              },
+              {
+                time: "3:00",
+                title: "Clausura del Congreso",
+                description:
+                  "Palabras finales, agradecimientos y despedida oficial del Congreso Familiar 2026."
               }
             ].map((item, index, array) => (
 
