@@ -2,6 +2,14 @@
 
 import { motion } from "framer-motion";
 
+import {
+  MapPin,
+  CalendarDays,
+  Clock3,
+  Users,
+  Navigation
+} from "lucide-react";
+
 export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
