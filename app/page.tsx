@@ -1534,232 +1534,239 @@ className="block group"
 
 
 
+{/* FOOTER */}
 
+<footer className="relative overflow-hidden bg-[#20232C] text-white">
 
+  {/* Glow decorativo */}
 
+  <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
+  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
 
+  <div className="relative z-10 max-w-7xl mx-auto px-6">
 
+    {/* CTA FINAL */}
 
+    <div className="py-28 text-center border-b border-white/10">
 
+      <span
+        className="
+          inline-block
+          px-5
+          py-2
+          rounded-full
+          bg-white/10
+          backdrop-blur-md
+          border
+          border-white/10
+          text-sm
+          uppercase
+          tracking-[4px]
+          text-gray-300
+        "
+      >
+        Congreso Familiar 2026
+      </span>
 
+      <h2
+        className="
+          mt-8
+          text-5xl
+          md:text-7xl
+          font-black
+          uppercase
+          leading-tight
+        "
+      >
+        Te Esperamos
+      </h2>
 
+      <p
+        className="
+          mt-8
+          max-w-3xl
+          mx-auto
+          text-xl
+          text-gray-300
+          leading-relaxed
+        "
+      >
+        Un día para fortalecer la familia,
+        renovar la fe y crecer juntos en los
+        principios que Dios estableció para el hogar.
+      </p>
 
-      {/* FOOTER */}
+    </div>
 
-      <footer className="relative overflow-hidden bg-[#20232C] text-white">
+    {/* FOOTER PRINCIPAL */}
 
-        {/* Glow decorativo */}
+    <div className="py-16 grid md:grid-cols-3 gap-14">
 
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
+      {/* Marca */}
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div>
 
-          {/* CTA FINAL */}
-          <div className="py-28 text-center border-b border-white/10">
+        <h3
+          className="
+            text-4xl
+            font-black
+            uppercase
+            leading-none
+          "
+        >
+          Congreso
+          <br />
+          Familiar
+        </h3>
 
-            <span
-              className="
-      inline-block
-      px-5
-      py-2
-      rounded-full
-      bg-white/10
-      backdrop-blur-md
-      border
-      border-white/10
-      text-sm
-      uppercase
-      tracking-[4px]
-      text-gray-300
-    "
-            >
-              Congreso Familiar 2026
+        <p
+          className="
+            mt-6
+            text-gray-400
+            leading-8
+            text-lg
+          "
+        >
+          Una jornada diseñada para fortalecer
+          matrimonios, padres, hijos y familias
+          completas mediante la enseñanza de la
+          Palabra de Dios.
+        </p>
+
+      </div>
+
+      {/* Información */}
+
+      <div>
+
+        <h4
+          className="
+            text-lg
+            uppercase
+            tracking-[4px]
+            mb-8
+          "
+        >
+          Información
+        </h4>
+
+        <div className="space-y-5">
+
+          <div className="flex items-center gap-4 text-gray-300">
+
+            <CalendarDays size={18} />
+
+            <span>
+              19 de Julio 2026
             </span>
 
-            <h2
-              className="
-      mt-8
-      text-5xl
-      md:text-7xl
-      font-black
-      uppercase
-      leading-tight
-    "
-            >
-              Te Esperamos
-            </h2>
+          </div>
 
-            <p
-              className="
-      mt-8
-      max-w-3xl
-      mx-auto
-      text-xl
-      text-gray-300
-      leading-relaxed
-    "
-            >
-              Un día para fortalecer la familia, renovar la fe
-              y crecer juntos en los principios que Dios estableció
-              para el hogar.
-            </p>
+          <div className="flex items-center gap-4 text-gray-300">
 
-            <div className="mt-12 flex flex-wrap justify-center gap-5">
+            <Clock3 size={18} />
 
-              <button
-                className="
-        group
-        relative
-        overflow-hidden
-        px-10
-        py-5
-        rounded-full
-        bg-white
-        text-[#20232C]
-        font-semibold
-        shadow-2xl
-        hover:scale-105
-        transition-all
-      "
-              >
-                Confirmar Asistencia
-              </button>
-
-              <button
-                className="
-        px-10
-        py-5
-        rounded-full
-        border-2
-        border-white
-        hover:bg-white
-        hover:text-[#20232C]
-        transition-all
-      "
-              >
-                Ver Ubicación
-              </button>
-
-            </div>
+            <span>
+              10:00 AM
+            </span>
 
           </div>
 
-          {/* FOOTER PRINCIPAL */}
-          <div className="py-16 grid md:grid-cols-3 gap-12">
+          <div className="flex items-center gap-4 text-gray-300">
 
-            {/* Marca */}
-            <div>
+            <MapPin size={18} />
 
-              <h3
-                className="
-        text-4xl
-        font-black
-        uppercase
-      "
-              >
-                Congreso Familiar
-              </h3>
-
-              <p className="mt-4 text-gray-400 leading-7">
-                Una jornada diseñada para fortalecer matrimonios,
-                padres, hijos y familias completas mediante la
-                enseñanza de la Palabra de Dios.
-              </p>
-
-            </div>
-
-            {/* Información */}
-            <div>
-
-              <h4
-                className="
-        text-lg
-        uppercase
-        tracking-[3px]
-        mb-6
-      "
-              >
-                Información
-              </h4>
-
-              <div className="space-y-4 text-gray-400">
-
-                <p>📅 19 de Julio 2026</p>
-
-                <p>⏰ 10:00 AM</p>
-
-                <p>📍 Iglesia Getsemaní</p>
-
-                <p>📍 El Durazno, Hidalgo</p>
-
-              </div>
-
-            </div>
-
-            {/* Versículo */}
-            <div>
-
-              <h4
-                className="
-        text-lg
-        uppercase
-        tracking-[3px]
-        mb-6
-      "
-              >
-                Versículo Tema
-              </h4>
-
-              <blockquote
-                className="
-        text-xl
-        leading-relaxed
-        text-gray-300
-        italic
-      "
-              >
-                “Pero yo y mi casa
-                serviremos a Jehová.”
-              </blockquote>
-
-              <p className="mt-4 text-gray-500">
-                Josué 24:15
-              </p>
-
-            </div>
+            <span>
+              Iglesia Getsemaní
+            </span>
 
           </div>
 
-          {/* COPYRIGHT */}
-          <div
-            className="
-    border-t
-    border-white/10
-    py-8
-    flex
-    flex-col
-    md:flex-row
-    justify-between
-    items-center
-    gap-4
-  "
-          >
+          <div className="flex items-center gap-4 text-gray-300">
 
-            <p className="text-gray-500 text-sm">
-              © 2026 Congreso Familiar. Todos los derechos reservados.
-            </p>
+            <MapPin size={18} />
 
-            <p className="text-gray-500 text-sm">
-              Movimiento de la Iglesia Pentecostés de México, A.R.
-            </p>
+            <span>
+              El Durazno, Hidalgo
+            </span>
 
           </div>
-
 
         </div>
 
-      </footer>
+      </div>
+
+      {/* Versículo */}
+
+      <div>
+
+        <div className="flex items-center gap-3 mb-6">
+
+          <BookOpen size={20} />
+
+          <h4
+            className="
+              text-lg
+              uppercase
+              tracking-[4px]
+            "
+          >
+            Versículo Tema
+          </h4>
+
+        </div>
+
+        <blockquote
+          className="
+            text-3xl
+            leading-relaxed
+            text-gray-200
+            italic
+            font-light
+          "
+        >
+          “Pero yo y mi casa
+          serviremos a Jehová.”
+        </blockquote>
+
+        <p className="mt-6 text-gray-500">
+          Josué 24:15
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* COPYRIGHT */}
+
+    <div
+      className="
+        border-t
+        border-white/10
+        py-8
+        flex
+        flex-col
+        md:flex-row
+        justify-between
+        items-center
+        gap-4
+      "
+    >
+
+      <p className="text-gray-500 text-sm">
+        © 2026 Congreso Familiar.
+        Todos los derechos reservados.
+      </p>
+
+      <p className="text-gray-500 text-sm text-center">
+        Movimiento de la Iglesia Pentecostés de México, A.R.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
 
     </main>
