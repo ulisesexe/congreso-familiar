@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Congreso Familiar 2026. Un tiempo especial para fortalecer las familias mediante conferencias, talleres y enseñanza bíblica.",
   icons: {
-    icon: "/icon.png",
+    icon: "/icon.jpeg",
   },
 };
 
