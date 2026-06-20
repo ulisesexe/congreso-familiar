@@ -921,6 +921,12 @@ export default function Home() {
                 title: "Clausura del Congreso",
                 description:
                   "Palabras finales, agradecimientos y despedida oficial del Congreso Familiar 2026."
+              },
+              {
+                time: "Posterior al Congreso",
+                title: "Convivio General",
+                description:
+                  "Un tiempo especial para compartir, convivir y fortalecer la comunión entre todas las familias asistentes."
               }
             ].map((item, index, array) => (
 
