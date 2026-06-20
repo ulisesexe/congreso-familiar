@@ -535,246 +535,272 @@ export default function Home() {
 
 
 
-      {/* TEMAS */}
-      <section className="relative py-36 px-6 overflow-hidden bg-white">
+{/* TEMAS */}
+<section className="relative py-36 px-6 overflow-hidden bg-white">
 
-        {/* Glow decorativo */}
+  {/* Glow decorativo */}
 
-        <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+  <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+  <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
 
-        <div className="relative z-10 max-w-7xl mx-auto">
+  <div className="relative z-10 max-w-7xl mx-auto">
 
-          {/* Encabezado */}
-          <div className="text-center">
+    {/* Encabezado */}
 
-            <span
-              className="
-      inline-block
-      px-5
-      py-2
-      rounded-full
-      bg-white
-      border
-      border-black/10
-      shadow-lg
-      text-sm
-      uppercase
-      tracking-[4px]
-      text-gray-600
-    "
-            >
-              Conferencias y Talleres
-            </span>
+    <div className="text-center">
 
-            <h2
-              className="
-      mt-8
-      text-5xl
-      md:text-7xl
-      font-black
-      uppercase
-      text-[#20232C]
-    "
-            >
-              Temas del Congreso
-            </h2>
-
-            <p
-              className="
-      mt-8
-      max-w-3xl
-      mx-auto
-      text-xl
-      text-gray-600
-      leading-relaxed
-    "
-            >
-              Una jornada diseñada para fortalecer cada área del hogar,
-              proporcionando principios bíblicos y herramientas prácticas
-              para la vida familiar.
-            </p>
-
-          </div>
-
-          {/* Cards */}
-          <div className="grid lg:grid-cols-3 gap-8 mt-20">
-
-            {[
-  {
-    icon: Heart,
-    title: "Matrimonio",
-    description:
-      "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
-  },
-  {
-    icon: Baby,
-    title: "Crianza de Hijos",
-    description:
-      "Principios prácticos para formar generaciones firmes en la fe."
-  },
-  {
-    icon: MessageCircleHeart,
-    title: "Comunicación Familiar",
-    description:
-      "Aprendiendo a construir relaciones saludables dentro del hogar."
-  },
-  {
-    icon: Church,
-    title: "Vida Espiritual",
-    description:
-      "Cómo mantener a Cristo en el centro de la familia."
-  },
-  {
-    icon: HandCoins,
-    title: "Finanzas Familiares",
-    description:
-      "Administración responsable de los recursos conforme a principios bíblicos."
-  },
-  {
-    icon: Crown,
-    title: "Liderazgo Cristiano",
-    description:
-      "Guiando el hogar con sabiduría, servicio y ejemplo."
-  }
-].map((tema, index) => (
-
-              <div
-                key={index}
-                className="
-        group
-        relative
-        overflow-hidden
-        rounded-[32px]
-        bg-white
-        border
-        border-black/5
-        p-8
-        shadow-xl
-        hover:shadow-2xl
-        hover:-translate-y-3
-        transition-all
-        duration-500
-      "
-              >
-
-                {/* Glow Hover */}
-                <div
-                  className="
-          absolute
-          inset-0
-          bg-gradient-to-br
-          from-[#20232C]/5
-          to-transparent
-          opacity-0
-          group-hover:opacity-100
-          transition
+      <span
+        className="
+          inline-block
+          px-5
+          py-2
+          rounded-full
+          bg-white
+          border
+          border-black/10
+          shadow-lg
+          text-sm
+          uppercase
+          tracking-[4px]
+          text-gray-600
         "
-                />
+      >
+        Conferencias y Talleres
+      </span>
 
-                <div className="relative z-10">
+      <h2
+        className="
+          mt-8
+          text-5xl
+          md:text-7xl
+          font-black
+          uppercase
+          text-[#20232C]
+        "
+      >
+        Temas del Congreso
+      </h2>
 
-                  <div
-                    className="
-            w-20
-            h-20
-            rounded-3xl
-            bg-[#20232C]
-            text-white
-            flex
-            items-center
-            justify-center
-            text-4xl
-            shadow-lg
-          "
-                  >
-                    {tema.icon}
-                  </div>
+      <p
+        className="
+          mt-8
+          max-w-3xl
+          mx-auto
+          text-xl
+          text-gray-600
+          leading-relaxed
+        "
+      >
+        Una jornada diseñada para fortalecer cada área del hogar,
+        proporcionando principios bíblicos y herramientas prácticas
+        para la vida familiar.
+      </p>
 
-                  <h3
-                    className="
-            mt-8
-            text-3xl
-            font-bold
-            text-[#20232C]
-          "
-                  >
-                    {tema.title}
-                  </h3>
+    </div>
 
-                  <p
-                    className="
-            mt-4
-            text-gray-600
-            leading-7
-          "
-                  >
-                    {tema.description}
-                  </p>
+    {/* Cards */}
 
-                  <div
-                    className="
-            mt-8
-            flex
-            items-center
-            gap-2
-            text-sm
-            uppercase
-            tracking-[3px]
-            text-gray-500
-          "
-                  >
-                    Congreso Familiar 2026
-                  </div>
+    <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
-                </div>
+      {[
+        {
+          icon: Heart,
+          title: "Matrimonio",
+          description:
+            "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
+        },
+        {
+          icon: Baby,
+          title: "Crianza de Hijos",
+          description:
+            "Principios prácticos para formar generaciones firmes en la fe."
+        },
+        {
+          icon: MessageCircleHeart,
+          title: "Comunicación Familiar",
+          description:
+            "Aprendiendo a construir relaciones saludables dentro del hogar."
+        },
+        {
+          icon: Church,
+          title: "Vida Espiritual",
+          description:
+            "Cómo mantener a Cristo en el centro de la familia."
+        },
+        {
+          icon: HandCoins,
+          title: "Finanzas Familiares",
+          description:
+            "Administración responsable de los recursos conforme a principios bíblicos."
+        },
+        {
+          icon: Crown,
+          title: "Liderazgo Cristiano",
+          description:
+            "Guiando el hogar con sabiduría, servicio y ejemplo."
+        }
+      ].map((tema, index) => {
 
-              </div>
+        const Icon = tema.icon;
 
-            ))}
+        return (
 
-          </div>
+          <div
+            key={index}
+            className="
+              group
+              relative
+              overflow-hidden
+              rounded-[32px]
+              bg-white
+              border
+              border-black/5
+              p-8
+              shadow-xl
+              hover:shadow-2xl
+              hover:-translate-y-3
+              transition-all
+              duration-500
+            "
+          >
 
-          {/* Frase Inferior */}
-          <div className="mt-24 text-center">
+            {/* Glow Hover */}
 
             <div
               className="
-      max-w-5xl
-      mx-auto
-      bg-[#20232C]
-      text-white
-      rounded-[40px]
-      px-10
-      py-14
-      shadow-2xl
-    "
-            >
+                absolute
+                inset-0
+                bg-gradient-to-br
+                from-[#20232C]/5
+                to-transparent
+                opacity-0
+                group-hover:opacity-100
+                transition-all
+                duration-500
+              "
+            />
 
-              <p className="uppercase tracking-[4px] text-gray-300 text-sm">
-                Nuestro Propósito
-              </p>
+            <div className="relative z-10">
+
+              {/* Icono */}
+
+              <div
+                className="
+                  w-20
+                  h-20
+                  rounded-[28px]
+                  bg-gradient-to-br
+                  from-[#20232C]
+                  to-[#3A4254]
+                  text-white
+                  flex
+                  items-center
+                  justify-center
+                  shadow-xl
+                  group-hover:scale-110
+                  transition-all
+                  duration-500
+                "
+              >
+                <Icon
+                  size={34}
+                  strokeWidth={1.8}
+                />
+              </div>
+
+              {/* Título */}
 
               <h3
                 className="
-        mt-6
-        text-3xl
-        md:text-5xl
-        font-light
-        leading-tight
-      "
+                  mt-8
+                  text-3xl
+                  font-bold
+                  text-[#20232C]
+                "
               >
-                Fortalecer familias, restaurar hogares y
-                levantar una generación que sirva a Dios.
+                {tema.title}
               </h3>
+
+              {/* Descripción */}
+
+              <p
+                className="
+                  mt-4
+                  text-gray-600
+                  leading-7
+                "
+              >
+                {tema.description}
+              </p>
+
+              {/* Footer Card */}
+
+              <div
+                className="
+                  mt-8
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  uppercase
+                  tracking-[3px]
+                  text-gray-500
+                "
+              >
+                Congreso Familiar 2026
+              </div>
 
             </div>
 
           </div>
 
-        </div>
+        );
 
-      </section>
+      })}
+
+    </div>
+
+    {/* Frase Inferior */}
+
+    <div className="mt-24 text-center">
+
+      <div
+        className="
+          max-w-5xl
+          mx-auto
+          bg-[#20232C]
+          text-white
+          rounded-[40px]
+          px-10
+          py-14
+          shadow-2xl
+        "
+      >
+
+        <p className="uppercase tracking-[4px] text-gray-300 text-sm">
+          Nuestro Propósito
+        </p>
+
+        <h3
+          className="
+            mt-6
+            text-3xl
+            md:text-5xl
+            font-light
+            leading-tight
+          "
+        >
+          Fortalecer familias, restaurar hogares y
+          levantar una generación que sirva a Dios.
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
