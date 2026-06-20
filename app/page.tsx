@@ -535,22 +535,22 @@ export default function Home() {
 
 
 
-    {/* TEMAS */}
-    <section className="relative py-36 px-6 overflow-hidden bg-white">
+      {/* TEMAS */}
+      <section className="relative py-36 px-6 overflow-hidden bg-white">
 
-      {/* Glow decorativo */}
+        {/* Glow decorativo */}
 
-      <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#20232C]/5 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Encabezado */}
+          {/* Encabezado */}
 
-        <div className="text-center">
+          <div className="text-center">
 
-          <span
-            className="
+            <span
+              className="
               inline-block
               px-5
               py-2
@@ -564,12 +564,12 @@ export default function Home() {
               tracking-[4px]
               text-gray-600
             "
-          >
-            Conferencias y Talleres
-          </span>
+            >
+              Conferencias y Talleres
+            </span>
 
-          <h2
-            className="
+            <h2
+              className="
               mt-8
               text-5xl
               md:text-7xl
@@ -577,12 +577,12 @@ export default function Home() {
               uppercase
               text-[#20232C]
             "
-          >
-            Temas del Congreso
-          </h2>
+            >
+              Temas del Congreso
+            </h2>
 
-          <p
-            className="
+            <p
+              className="
               mt-8
               max-w-3xl
               mx-auto
@@ -590,64 +590,64 @@ export default function Home() {
               text-gray-600
               leading-relaxed
             "
-          >
-            Una jornada diseñada para fortalecer cada área del hogar,
-            proporcionando principios bíblicos y herramientas prácticas
-            para la vida familiar.
-          </p>
+            >
+              Una jornada diseñada para fortalecer cada área del hogar,
+              proporcionando principios bíblicos y herramientas prácticas
+              para la vida familiar.
+            </p>
 
-        </div>
+          </div>
 
-        {/* Cards */}
+          {/* Cards */}
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-20">
+          <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
-          {[
-            {
-              icon: Heart,
-              title: "Matrimonio",
-              description:
-                "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
-            },
-            {
-              icon: Baby,
-              title: "Crianza de Hijos",
-              description:
-                "Principios prácticos para formar generaciones firmes en la fe."
-            },
-            {
-              icon: MessageCircleHeart,
-              title: "Comunicación Familiar",
-              description:
-                "Aprendiendo a construir relaciones saludables dentro del hogar."
-            },
-            {
-              icon: Church,
-              title: "Vida Espiritual",
-              description:
-                "Cómo mantener a Cristo en el centro de la familia."
-            },
-            {
-              icon: HandCoins,
-              title: "Finanzas Familiares",
-              description:
-                "Administración responsable de los recursos conforme a principios bíblicos."
-            },
-            {
-              icon: Crown,
-              title: "Liderazgo Cristiano",
-              description:
-                "Guiando el hogar con sabiduría, servicio y ejemplo."
-            }
-          ].map((tema, index) => {
+            {[
+              {
+                icon: Heart,
+                title: "Matrimonio",
+                description:
+                  "Fortaleciendo el pacto establecido por Dios mediante amor, respeto y compromiso."
+              },
+              {
+                icon: Baby,
+                title: "Crianza de Hijos",
+                description:
+                  "Principios prácticos para formar generaciones firmes en la fe."
+              },
+              {
+                icon: MessageCircleHeart,
+                title: "Comunicación Familiar",
+                description:
+                  "Aprendiendo a construir relaciones saludables dentro del hogar."
+              },
+              {
+                icon: Church,
+                title: "Vida Espiritual",
+                description:
+                  "Cómo mantener a Cristo en el centro de la familia."
+              },
+              {
+                icon: HandCoins,
+                title: "Finanzas Familiares",
+                description:
+                  "Administración responsable de los recursos conforme a principios bíblicos."
+              },
+              {
+                icon: Crown,
+                title: "Liderazgo Cristiano",
+                description:
+                  "Guiando el hogar con sabiduría, servicio y ejemplo."
+              }
+            ].map((tema, index) => {
 
-            const Icon = tema.icon;
+              const Icon = tema.icon;
 
-            return (
+              return (
 
-              <div
-                key={index}
-                className="
+                <div
+                  key={index}
+                  className="
                   group
                   relative
                   overflow-hidden
@@ -662,12 +662,12 @@ export default function Home() {
                   transition-all
                   duration-500
                 "
-              >
+                >
 
-                {/* Glow Hover */}
+                  {/* Glow Hover */}
 
-                <div
-                  className="
+                  <div
+                    className="
                     absolute
                     inset-0
                     bg-gradient-to-br
@@ -678,14 +678,14 @@ export default function Home() {
                     transition-all
                     duration-500
                   "
-                />
+                  />
 
-                <div className="relative z-10">
+                  <div className="relative z-10">
 
-                  {/* Icono */}
+                    {/* Icono */}
 
-                  <div
-                    className="
+                    <div
+                      className="
                       w-20
                       h-20
                       rounded-[28px]
@@ -701,42 +701,42 @@ export default function Home() {
                       transition-all
                       duration-500
                     "
-                  >
-                    <Icon
-                      size={34}
-                      strokeWidth={1.8}
-                    />
-                  </div>
+                    >
+                      <Icon
+                        size={34}
+                        strokeWidth={1.8}
+                      />
+                    </div>
 
-                  {/* Título */}
+                    {/* Título */}
 
-                  <h3
-                    className="
+                    <h3
+                      className="
                       mt-8
                       text-3xl
                       font-bold
                       text-[#20232C]
                     "
-                  >
-                    {tema.title}
-                  </h3>
+                    >
+                      {tema.title}
+                    </h3>
 
-                  {/* Descripción */}
+                    {/* Descripción */}
 
-                  <p
-                    className="
+                    <p
+                      className="
                       mt-4
                       text-gray-600
                       leading-7
                     "
-                  >
-                    {tema.description}
-                  </p>
+                    >
+                      {tema.description}
+                    </p>
 
-                  {/* Footer Card */}
+                    {/* Footer Card */}
 
-                  <div
-                    className="
+                    <div
+                      className="
                       mt-8
                       flex
                       items-center
@@ -746,26 +746,26 @@ export default function Home() {
                       tracking-[3px]
                       text-gray-500
                     "
-                  >
-                    Congreso Familiar 2026
+                    >
+                      Congreso Familiar 2026
+                    </div>
+
                   </div>
 
                 </div>
 
-              </div>
+              );
 
-            );
+            })}
 
-          })}
+          </div>
 
-        </div>
+          {/* Frase Inferior */}
 
-        {/* Frase Inferior */}
+          <div className="mt-24 text-center">
 
-        <div className="mt-24 text-center">
-
-          <div
-            className="
+            <div
+              className="
               max-w-5xl
               mx-auto
               bg-[#20232C]
@@ -775,32 +775,32 @@ export default function Home() {
               py-14
               shadow-2xl
             "
-          >
+            >
 
-            <p className="uppercase tracking-[4px] text-gray-300 text-sm">
-              Nuestro Propósito
-            </p>
+              <p className="uppercase tracking-[4px] text-gray-300 text-sm">
+                Nuestro Propósito
+              </p>
 
-            <h3
-              className="
+              <h3
+                className="
                 mt-6
                 text-3xl
                 md:text-5xl
                 font-light
                 leading-tight
               "
-            >
-              Fortalecer familias, restaurar hogares y
-              levantar una generación que sirva a Dios.
-            </h3>
+              >
+                Fortalecer familias, restaurar hogares y
+                levantar una generación que sirva a Dios.
+              </h3>
+
+            </div>
 
           </div>
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
 
 
 
@@ -1403,17 +1403,17 @@ export default function Home() {
 
             </div>
 
-      {/* MAPA */}
-      <a
-      href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block group"
+            {/* MAPA */}
+            <a
+              href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
 
-      >
+            >
 
-        <div
-          className="
+              <div
+                className="
             relative
             overflow-hidden
             rounded-[40px]
@@ -1424,21 +1424,21 @@ export default function Home() {
             bg-white
             cursor-pointer
           "
-        >
+              >
 
-      {/* MAPA REAL */}
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.645156461913!2d-99.22245649999999!3d20.5207677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3e100639e8479%3A0xb538dad5f36e9ab5!2sIglesia%20Getsemani!5e0!3m2!1ses-419!2smx!4v1781995204367!5m2!1ses-419!2smx"
-        className="absolute inset-0 w-full h-full"
-        style={{ border: 0 }}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+                {/* MAPA REAL */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.645156461913!2d-99.22245649999999!3d20.5207677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3e100639e8479%3A0xb538dad5f36e9ab5!2sIglesia%20Getsemani!5e0!3m2!1ses-419!2smx!4v1781995204367!5m2!1ses-419!2smx"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
 
-      {/* Card Inferior */}
+                {/* Card Inferior */}
 
-      <div
-        className="
+                <div
+                  className="
           absolute
           bottom-6
           left-6
@@ -1454,36 +1454,36 @@ export default function Home() {
           duration-300
           group-hover:scale-[1.02]
         "
-      >
+                >
 
-        <p
-          className="
+                  <p
+                    className="
             text-xs
             uppercase
             tracking-[4px]
             text-gray-500
           "
-        >
-          Congreso Familiar 2026
-        </p>
+                  >
+                    Congreso Familiar 2026
+                  </p>
 
-        <h4
-          className="
+                  <h4
+                    className="
             mt-2
             text-2xl
             font-bold
             text-[#20232C]
           "
-        >
-          Iglesia Getsemaní
-        </h4>
+                  >
+                    Iglesia Getsemaní
+                  </h4>
 
-        <p className="text-gray-600 mt-2">
-          42310, El Durazno, Hidalgo
-        </p>
+                  <p className="text-gray-600 mt-2">
+                    42310, El Durazno, Hidalgo
+                  </p>
 
-        <div
-          className="
+                  <div
+                    className="
             mt-4
             flex
             items-center
@@ -1491,21 +1491,21 @@ export default function Home() {
             text-[#20232C]
             font-medium
           "
-        >
+                  >
 
-          <Navigation size={18} />
+                    <Navigation size={18} />
 
-          <span>
-            Abrir ruta en Google Maps
-          </span>
+                    <span>
+                      Abrir ruta en Google Maps
+                    </span>
 
-        </div>
+                  </div>
 
-      </div>
+                </div>
 
-        </div>
+              </div>
 
-      </a>
+            </a>
 
 
 
@@ -1563,27 +1563,22 @@ export default function Home() {
 
 
 
+      {/* FOOTER */}
+      <footer className="relative overflow-hidden bg-[#20232C] text-white">
 
+        {/* Glow decorativo */}
 
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
 
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
 
-        {/* FOOTER */}
+          {/* CTA FINAL */}
 
-        <footer className="relative overflow-hidden bg-[#20232C] text-white">
+          <div className="py-28 text-center border-b border-white/10">
 
-          {/* Glow decorativo */}
-
-          <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
-
-          <div className="relative z-10 max-w-7xl mx-auto px-6">
-
-            {/* CTA FINAL */}
-
-            <div className="py-28 text-center border-b border-white/10">
-
-              <span
-                className="
+            <span
+              className="
                   inline-block
                   px-5
                   py-2
@@ -1597,12 +1592,12 @@ export default function Home() {
                   tracking-[4px]
                   text-gray-300
                 "
-              >
-                Congreso Familiar 2026
-              </span>
+            >
+              Congreso Familiar 2026
+            </span>
 
-              <h2
-                className="
+            <h2
+              className="
                   mt-8
                   text-5xl
                   md:text-7xl
@@ -1610,12 +1605,12 @@ export default function Home() {
                   uppercase
                   leading-tight
                 "
-              >
-                Te Esperamos
-              </h2>
+            >
+              Te Esperamos
+            </h2>
 
-              <p
-                className="
+            <p
+              className="
                   mt-8
                   max-w-3xl
                   mx-auto
@@ -1623,157 +1618,157 @@ export default function Home() {
                   text-gray-300
                   leading-relaxed
                 "
-              >
-                Un día para fortalecer la familia,
-                renovar la fe y crecer juntos en los
-                principios que Dios estableció para el hogar.
-              </p>
+            >
+              Un día para fortalecer la familia,
+              renovar la fe y crecer juntos en los
+              principios que Dios estableció para el hogar.
+            </p>
 
-            </div>
+          </div>
 
-            {/* FOOTER PRINCIPAL */}
+          {/* FOOTER PRINCIPAL */}
 
-            <div className="py-16 grid md:grid-cols-3 gap-14">
+          <div className="py-16 grid md:grid-cols-3 gap-14">
 
-              {/* Marca */}
+            {/* Marca */}
 
-              <div>
+            <div>
 
-                <h3
-                  className="
+              <h3
+                className="
                     text-4xl
                     font-black
                     uppercase
                     leading-none
                   "
-                >
-                  Congreso
-                  <br />
-                  Familiar
-                </h3>
+              >
+                Congreso
+                <br />
+                Familiar
+              </h3>
 
-                <p
-                  className="
+              <p
+                className="
                     mt-6
                     text-gray-400
                     leading-8
                     text-lg
                   "
-                >
-                  Una jornada diseñada para fortalecer
-                  matrimonios, padres, hijos y familias
-                  completas mediante la enseñanza de la
-                  Palabra de Dios.
-                </p>
+              >
+                Una jornada diseñada para fortalecer
+                matrimonios, padres, hijos y familias
+                completas mediante la enseñanza de la
+                Palabra de Dios.
+              </p>
 
-              </div>
+            </div>
 
-              {/* Información */}
+            {/* Información */}
 
-              <div>
+            <div>
 
-                <h4
-                  className="
+              <h4
+                className="
                     text-lg
                     uppercase
                     tracking-[4px]
                     mb-8
                   "
-                >
-                  Información
-                </h4>
+              >
+                Información
+              </h4>
 
-                <div className="space-y-5">
+              <div className="space-y-5">
 
-                  <div className="flex items-center gap-4 text-gray-300">
+                <div className="flex items-center gap-4 text-gray-300">
 
-                    <CalendarDays size={18} />
+                  <CalendarDays size={18} />
 
-                    <span>
-                      19 de Julio 2026
-                    </span>
+                  <span>
+                    19 de Julio 2026
+                  </span>
 
-                  </div>
+                </div>
 
-                  <div className="flex items-center gap-4 text-gray-300">
+                <div className="flex items-center gap-4 text-gray-300">
 
-                    <Clock3 size={18} />
+                  <Clock3 size={18} />
 
-                    <span>
-                      10:00 AM
-                    </span>
+                  <span>
+                    10:00 AM
+                  </span>
 
-                  </div>
+                </div>
 
-                  <div className="flex items-center gap-4 text-gray-300">
+                <div className="flex items-center gap-4 text-gray-300">
 
-                    <MapPin size={18} />
+                  <MapPin size={18} />
 
-                    <span>
-                      Iglesia Getsemaní
-                    </span>
+                  <span>
+                    Iglesia Getsemaní
+                  </span>
 
-                  </div>
+                </div>
 
-                  <div className="flex items-center gap-4 text-gray-300">
+                <div className="flex items-center gap-4 text-gray-300">
 
-                    <MapPin size={18} />
+                  <MapPin size={18} />
 
-                    <span>
-                      El Durazno, Hidalgo
-                    </span>
-
-                  </div>
+                  <span>
+                    El Durazno, Hidalgo
+                  </span>
 
                 </div>
 
               </div>
 
-              {/* Versículo */}
+            </div>
 
-              <div>
+            {/* Versículo */}
 
-                <div className="flex items-center gap-3 mb-6">
+            <div>
 
-                  <BookOpen size={20} />
+              <div className="flex items-center gap-3 mb-6">
 
-                  <h4
-                    className="
+                <BookOpen size={20} />
+
+                <h4
+                  className="
                       text-lg
                       uppercase
                       tracking-[4px]
                     "
-                  >
-                    Versículo Tema
-                  </h4>
+                >
+                  Versículo Tema
+                </h4>
 
-                </div>
+              </div>
 
-                <blockquote
-                  className="
+              <blockquote
+                className="
                     text-3xl
                     leading-relaxed
                     text-gray-200
                     italic
                     font-light
                   "
-                >
-                  “Pero yo y mi casa
-                  serviremos a Jehová.”
-                </blockquote>
+              >
+                “Pero yo y mi casa
+                serviremos a Jehová.”
+              </blockquote>
 
-                <p className="mt-6 text-gray-500">
-                  Josué 24:15
-                </p>
-
-              </div>
+              <p className="mt-6 text-gray-500">
+                Josué 24:15
+              </p>
 
             </div>
 
-            {/* COPYRIGHT */}
+          </div>
 
-            <div
-              className="
+          {/* COPYRIGHT */}
+
+          <div
+            className="
                 border-t
                 border-white/10
                 py-8
@@ -1784,22 +1779,22 @@ export default function Home() {
                 items-center
                 gap-4
               "
-            >
+          >
 
-              <p className="text-gray-500 text-sm">
-                © 2026 Congreso Familiar.
-                Todos los derechos reservados.
-              </p>
+            <p className="text-gray-500 text-sm">
+              © 2026 Congreso Familiar.
+              Todos los derechos reservados.
+            </p>
 
-              <p className="text-gray-500 text-sm text-center">
-                Movimiento de la Iglesia Pentecostés de México, A.R.
-              </p>
-
-            </div>
+            <p className="text-gray-500 text-sm text-center">
+              Movimiento de la Iglesia Pentecostés de México, A.R.
+            </p>
 
           </div>
 
-        </footer>
+        </div>
+
+      </footer>
 
 
     </main>
