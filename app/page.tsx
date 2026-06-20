@@ -1393,7 +1393,6 @@ className="block group"
     "
   >
 
-```
 {/* MAPA REAL */}
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.645156461913!2d-99.22245649999999!3d20.5207677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3e100639e8479%3A0xb538dad5f36e9ab5!2sIglesia%20Getsemani!5e0!3m2!1ses-419!2smx!4v1781995204367!5m2!1ses-419!2smx"
@@ -1402,47 +1401,6 @@ className="block group"
   loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
 />
-
-{/* Badge Superior */}
-
-<div
-  className="
-    absolute
-    top-6
-    left-6
-    bg-white/95
-    backdrop-blur-xl
-    rounded-2xl
-    px-5
-    py-3
-    shadow-xl
-    border
-    border-black/5
-  "
->
-
-  <p
-    className="
-      text-xs
-      uppercase
-      tracking-[3px]
-      text-gray-500
-    "
-  >
-    Ubicación del Evento
-  </p>
-
-  <p
-    className="
-      mt-1
-      font-semibold
-      text-[#20232C]
-    "
-  >
-    Iglesia Getsemaní
-  </p>
-
-</div>
 
 {/* Card Inferior */}
 
