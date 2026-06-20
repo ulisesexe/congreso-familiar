@@ -6,25 +6,25 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-{/* HERO */}
+      {/* HERO */}
 
-<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-5 py-20">
+      <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-5 py-20">
 
-{/* Glow principal */}
+        {/* Glow principal */}
 
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-white/40 blur-3xl rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-white/40 blur-3xl rounded-full" />
 
-<motion.div
-initial={{ opacity: 0, y: 60 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 1 }}
-className="relative z-10 w-full max-w-7xl text-center"
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative z-10 w-full max-w-7xl text-center"
 
->
+        >
 
-{/* Badge */}
-<div
-  className="
+          {/* Badge */}
+          <div
+            className="
     inline-flex
     items-center
     gap-3
@@ -37,27 +37,27 @@ className="relative z-10 w-full max-w-7xl text-center"
     border
     border-black/5
   "
->
-  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+          >
+            <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
 
-  <span
-    className="
+            <span
+              className="
       text-xs
       md:text-sm
       uppercase
       tracking-[4px]
       font-medium
     "
-  >
-    Congreso Familiar 2026
-  </span>
-</div>
+            >
+              Congreso Familiar 2026
+            </span>
+          </div>
 
-{/* TITULO */}
-<div className="mt-8">
+          {/* TITULO */}
+          <div className="mt-8">
 
-  <h1
-    className="
+            <h1
+              className="
       text-[4rem]
       sm:text-[5rem]
       md:text-[8rem]
@@ -68,12 +68,12 @@ className="relative z-10 w-full max-w-7xl text-center"
       tracking-tight
       text-[#20232C]
     "
-  >
-    Congreso
-  </h1>
+            >
+              Congreso
+            </h1>
 
-  <h2
-    className="
+            <h2
+              className="
       text-[3.5rem]
       sm:text-[4.5rem]
       md:text-[7rem]
@@ -88,32 +88,32 @@ className="relative z-10 w-full max-w-7xl text-center"
       bg-clip-text
       text-transparent
     "
-  >
-    Familiar
-  </h2>
+            >
+              Familiar
+            </h2>
 
-</div>
+          </div>
 
-{/* Línea */}
-<div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-6 rounded-full" />
+          {/* Línea */}
+          <div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-6 rounded-full" />
 
-{/* Tema */}
-<div className="mt-10">
+          {/* Tema */}
+          <div className="mt-10">
 
-  <p
-    className="
+            <p
+              className="
       uppercase
       tracking-[6px]
       text-sm
       text-gray-500
       mb-5
     "
-  >
-    Tema
-  </p>
+            >
+              Tema
+            </p>
 
-  <h3
-    className="
+            <h3
+              className="
       text-2xl
       sm:text-3xl
       md:text-5xl
@@ -123,21 +123,21 @@ className="relative z-10 w-full max-w-7xl text-center"
       max-w-4xl
       mx-auto
     "
-  >
-    “Pero yo y mi casa
-    <br />
-    serviremos a Jehová”
-  </h3>
+            >
+              “Pero yo y mi casa
+              <br />
+              serviremos a Jehová”
+            </h3>
 
-  <p className="mt-5 text-lg md:text-2xl text-gray-500">
-    Josué 24:15
-  </p>
+            <p className="mt-5 text-lg md:text-2xl text-gray-500">
+              Josué 24:15
+            </p>
 
-</div>
+          </div>
 
-{/* FECHA HORA LUGAR */}
-<div
-  className="
+          {/* FECHA HORA LUGAR */}
+          <div
+            className="
     mt-10
     grid
     grid-cols-1
@@ -147,10 +147,10 @@ className="relative z-10 w-full max-w-7xl text-center"
     max-w-5xl
     mx-auto
   "
->
+          >
 
-  <div
-    className="
+            <div
+              className="
       bg-white/80
       backdrop-blur-xl
       rounded-3xl
@@ -159,18 +159,18 @@ className="relative z-10 w-full max-w-7xl text-center"
       border
       border-black/5
     "
-  >
-    <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-      Fecha
-    </p>
+            >
+              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
+                Fecha
+              </p>
 
-    <p className="mt-3 text-3xl font-bold text-[#20232C]">
-      19 Julio 2026
-    </p>
-  </div>
+              <p className="mt-3 text-3xl font-bold text-[#20232C]">
+                19 Julio 2026
+              </p>
+            </div>
 
-  <div
-    className="
+            <div
+              className="
       bg-white/80
       backdrop-blur-xl
       rounded-3xl
@@ -179,18 +179,18 @@ className="relative z-10 w-full max-w-7xl text-center"
       border
       border-black/5
     "
-  >
-    <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-      Hora
-    </p>
+            >
+              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
+                Hora
+              </p>
 
-    <p className="mt-3 text-3xl font-bold text-[#20232C]">
-      10:00 AM
-    </p>
-  </div>
+              <p className="mt-3 text-3xl font-bold text-[#20232C]">
+                10:00 AM
+              </p>
+            </div>
 
-  <div
-    className="
+            <div
+              className="
       bg-white/80
       backdrop-blur-xl
       rounded-3xl
@@ -201,25 +201,25 @@ className="relative z-10 w-full max-w-7xl text-center"
       sm:col-span-2
       lg:col-span-1
     "
-  >
-    <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-      Lugar
-    </p>
+            >
+              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
+                Lugar
+              </p>
 
-    <p className="mt-3 text-2xl font-bold text-[#20232C]">
-      Iglesia Getsemaní
-    </p>
+              <p className="mt-3 text-2xl font-bold text-[#20232C]">
+                Iglesia Getsemaní
+              </p>
 
-    <p className="text-gray-500 mt-2">
-      El Durazno, Hidalgo
-    </p>
-  </div>
+              <p className="text-gray-500 mt-2">
+                El Durazno, Hidalgo
+              </p>
+            </div>
 
-</div>
+          </div>
 
-{/* BOTONES */}
-<div
-  className="
+          {/* BOTONES */}
+          <div
+            className="
     mt-10
     flex
     flex-col
@@ -227,18 +227,18 @@ className="relative z-10 w-full max-w-7xl text-center"
     justify-center
     gap-4
   "
->
+          >
 
 
 
-{/* BOTON */}
-<div className="mt-10 flex justify-center">
+            {/* BOTON */}
+            <div className="mt-10 flex justify-center">
 
-  <a
-    href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
+              <a
+                href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
       group
       relative
       overflow-hidden
@@ -253,14 +253,14 @@ className="relative z-10 w-full max-w-7xl text-center"
       transition-all
       duration-300
     "
-  >
+              >
 
-    <span className="relative z-10 flex items-center gap-3">
-       Ver Ubicación
-    </span>
+                <span className="relative z-10 flex items-center gap-3">
+                  Ver Ubicación
+                </span>
 
-    <div
-      className="
+                <div
+                  className="
         absolute
         inset-0
         bg-gradient-to-r
@@ -272,18 +272,18 @@ className="relative z-10 w-full max-w-7xl text-center"
         transition-transform
         duration-1000
       "
-    />
+                />
 
-  </a>
+              </a>
 
-</div>
+            </div>
 
-</div>
+          </div>
 
 
-</motion.div>
+        </motion.div>
 
-</section>
+      </section>
 
 
 
@@ -798,20 +798,20 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 
 
-{/* PROGRAMA */}
-<section className="relative py-36 px-6 overflow-hidden bg-[#20232C] text-white">
+      {/* PROGRAMA */}
+      <section className="relative py-36 px-6 overflow-hidden bg-[#20232C] text-white">
 
-  {/* Glow Fondo */}
-  <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-white/5 rounded-full blur-3xl" />
-  <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
+        {/* Glow Fondo */}
+        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-white/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
 
-  <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="relative z-10 max-w-7xl mx-auto">
 
-    {/* Encabezado */}
-    <div className="text-center">
+          {/* Encabezado */}
+          <div className="text-center">
 
-      <span
-        className="
+            <span
+              className="
           inline-block
           px-5
           py-2
@@ -825,24 +825,24 @@ className="relative z-10 w-full max-w-7xl text-center"
           tracking-[4px]
           text-gray-300
         "
-      >
-        Agenda del Evento
-      </span>
+            >
+              Agenda del Evento
+            </span>
 
-      <h2
-        className="
+            <h2
+              className="
           mt-8
           text-5xl
           md:text-7xl
           font-black
           uppercase
         "
-      >
-        Programa
-      </h2>
+            >
+              Programa
+            </h2>
 
-      <p
-        className="
+            <p
+              className="
           mt-8
           max-w-3xl
           mx-auto
@@ -850,88 +850,89 @@ className="relative z-10 w-full max-w-7xl text-center"
           text-gray-300
           leading-relaxed
         "
-      >
-        Un día especial para aprender, adorar y fortalecer
-        nuestras familias conforme a la Palabra de Dios.
-      </p>
+            >
+              Un día especial para aprender, adorar y fortalecer
+              nuestras familias conforme a la Palabra de Dios.
+            </p>
 
-    </div>
+          </div>
 
-    {/* Timeline */}
-    <div className="mt-24 max-w-5xl mx-auto">
+          {/* Timeline */}
+          <div className="mt-24 max-w-5xl mx-auto">
 
-      {[
-        {
-          time: "10:00 - 10:10",
-          title: "Bienvenida, Lectura Bíblica y Oración",
-          description:
-            "Inicio oficial del Congreso Familiar con lectura bíblica y oración."
-        },
-        {
-          time: "10:10 - 10:50",
-          title: "Alabanzas",
-          description:
-            "Tiempo especial de adoración dirigido por el grupo de alabanza."
-        },
-        {
-          time: "10:50 - 12:00",
-          title: "1ª Conferencia General",
-          description:
-            "Tema: 'Pero yo y mi casa serviremos a Jehová'."
-        },
-        {
-          time: "12:00 - 12:30",
-          title: "Alabanzas",
-          description:
-            "Momento de adoración y gratitud a Dios."
-        },
-        {
-          time: "12:30 - 12:50",
-          title: "Oración por las Familias",
-          description:
-            "Intercesión especial por matrimonios, hijos y hogares."
-        },
-        {
-          time: "12:50 - 1:50",
-          title: "Talleres Especializados",
-          description:
-            "Sesiones simultáneas para diferentes grupos de la congregación.",
-          workshops: [
-            "Varones",
-            "Femenil",
-            "Jóvenes y Adolescentes",
-            "Infantil"
-          ]
-        },
-        {
-          time: "1:50 - 2:50",
-          title: "2ª Conferencia General",
-          description:
-            "Enseñanza enfocada en fortalecer los principios cristianos en el hogar."
-        },
-        {
-          time: "Clausura",
-          title: "Oración por las Ofrendas",
-          description:
-            "Momento final de agradecimiento y cierre del Congreso."
-        }
-      ].map((item, index, array) => (
+            {[
+              {
+                time: "10:00 - 10:10",
+                title: "Bienvenida, Lectura Bíblica y Oración",
+                description:
+                  "Inicio oficial del Congreso Familiar con lectura bíblica y oración."
+              },
+              {
+                time: "10:10 - 10:50",
+                title: "Alabanzas",
+                description:
+                  "Tiempo especial de adoración dirigido por el grupo de alabanza."
+              },
+              {
+                time: "10:50 - 12:00",
+                title: "1ª Conferencia General",
+                description:
+                  "Tema: 'Pero yo y mi casa serviremos a Jehová'."
+              },
+              {
+                time: "12:00 - 12:30",
+                title: "Alabanzas",
+                description:
+                  "Momento de adoración y gratitud a Dios."
+              },
+              {
+                time: "12:30 - 12:50",
+                title: "Oración por las Familias",
+                description:
+                  "Intercesión especial por matrimonios, hijos y hogares."
+              },
+              {
+                time: "12:50 - 1:50",
+                title: "Talleres Especializados",
+                description:
+                  "Sesiones simultáneas para diferentes grupos de la congregación.",
+                workshops: [
+                  "Varones",
+                  "Femenil",
+                  "Jóvenes",
+                  "Adolescentes",
+                  "Infantil"
+                ]
+              },
+              {
+                time: "1:50 - 2:50",
+                title: "2ª Conferencia General",
+                description:
+                  "Enseñanza enfocada en fortalecer los principios cristianos en el hogar."
+              },
+              {
+                time: "Clausura",
+                title: "Oración por las Ofrendas",
+                description:
+                  "Momento final de agradecimiento y cierre del Congreso."
+              }
+            ].map((item, index, array) => (
 
-        <div
-          key={index}
-          className="
+              <div
+                key={index}
+                className="
             relative
             flex
             gap-6
             mb-12
             group
           "
-        >
+              >
 
-          {index !== array.length - 1 && (
+                {index !== array.length - 1 && (
 
-            <div
-              className="
+                  <div
+                    className="
                 absolute
                 left-[39px]
                 top-20
@@ -939,13 +940,13 @@ className="relative z-10 w-full max-w-7xl text-center"
                 h-[160px]
                 bg-white/15
               "
-            />
+                  />
 
-          )}
+                )}
 
-          {/* Nodo */}
-          <div
-            className="
+                {/* Nodo */}
+                <div
+                  className="
               flex-shrink-0
               w-20
               h-20
@@ -960,13 +961,13 @@ className="relative z-10 w-full max-w-7xl text-center"
               group-hover:scale-110
               transition-all
             "
-          >
-            ●
-          </div>
+                >
+                  ●
+                </div>
 
-          {/* Card */}
-          <div
-            className="
+                {/* Card */}
+                <div
+                  className="
               flex-1
               bg-white/5
               border
@@ -977,47 +978,47 @@ className="relative z-10 w-full max-w-7xl text-center"
               hover:bg-white/10
               transition-all
             "
-          >
+                >
 
-            <span
-              className="
+                  <span
+                    className="
                 text-sm
                 uppercase
                 tracking-[4px]
                 text-gray-400
               "
-            >
-              {item.time}
-            </span>
+                  >
+                    {item.time}
+                  </span>
 
-            <h3
-              className="
+                  <h3
+                    className="
                 mt-3
                 text-2xl
                 md:text-3xl
                 font-bold
               "
-            >
-              {item.title}
-            </h3>
+                  >
+                    {item.title}
+                  </h3>
 
-            <p
-              className="
+                  <p
+                    className="
                 mt-4
                 text-gray-300
                 leading-7
               "
-            >
-              {item.description}
-            </p>
+                  >
+                    {item.description}
+                  </p>
 
-            {/* Talleres simultáneos */}
-            {item.workshops && (
+                  {/* Talleres simultáneos */}
+                  {item.workshops && (
 
-              <div className="mt-8">
+                    <div className="mt-8">
 
-                <div
-                  className="
+                      <div
+                        className="
                     inline-flex
                     items-center
                     gap-2
@@ -1033,14 +1034,14 @@ className="relative z-10 w-full max-w-7xl text-center"
                     tracking-[3px]
                     mb-8
                   "
-                >
-                  Simultáneos
-                </div>
+                      >
+                        Simultáneos
+                      </div>
 
-                <div className="relative">
+                      <div className="relative">
 
-                  <div
-                    className="
+                        <div
+                          className="
                       absolute
                       left-[8px]
                       top-2
@@ -1048,24 +1049,24 @@ className="relative z-10 w-full max-w-7xl text-center"
                       w-[1px]
                       bg-white/15
                     "
-                  />
+                        />
 
-                  <div className="space-y-5">
+                        <div className="space-y-5">
 
-                    {item.workshops.map((workshop) => (
+                          {item.workshops.map((workshop) => (
 
-                      <div
-                        key={workshop}
-                        className="
+                            <div
+                              key={workshop}
+                              className="
                           relative
                           flex
                           items-center
                           gap-4
                         "
-                      >
+                            >
 
-                        <div
-                          className="
+                              <div
+                                className="
                             w-4
                             h-4
                             rounded-full
@@ -1074,10 +1075,10 @@ className="relative z-10 w-full max-w-7xl text-center"
                             border-[#20232C]
                             z-10
                           "
-                        />
+                              />
 
-                        <div
-                          className="
+                              <div
+                                className="
                             flex-1
                             bg-white/5
                             border
@@ -1087,35 +1088,35 @@ className="relative z-10 w-full max-w-7xl text-center"
                             py-3
                             backdrop-blur-xl
                           "
-                        >
-                          {workshop}
+                              >
+                                {workshop}
+                              </div>
+
+                            </div>
+
+                          ))}
+
                         </div>
 
                       </div>
 
-                    ))}
+                    </div>
 
-                  </div>
+                  )}
 
                 </div>
 
               </div>
 
-            )}
+            ))}
 
           </div>
 
-        </div>
+          {/* Card Final */}
+          <div className="mt-24">
 
-      ))}
-
-    </div>
-
-    {/* Card Final */}
-    <div className="mt-24">
-
-      <div
-        className="
+            <div
+              className="
           max-w-5xl
           mx-auto
           rounded-[40px]
@@ -1128,42 +1129,42 @@ className="relative z-10 w-full max-w-7xl text-center"
           p-12
           text-center
         "
-      >
+            >
 
-        <p
-          className="
+              <p
+                className="
             text-sm
             uppercase
             tracking-[4px]
             text-gray-400
           "
-        >
-          Tema del Congreso
-        </p>
+              >
+                Tema del Congreso
+              </p>
 
-        <h3
-          className="
+              <h3
+                className="
             mt-6
             text-3xl
             md:text-5xl
             font-light
             leading-tight
           "
-        >
-          “Pero yo y mi casa serviremos a Jehová”
-        </h3>
+              >
+                “Pero yo y mi casa serviremos a Jehová”
+              </h3>
 
-        <p className="mt-6 text-gray-300 text-lg">
-          Josué 24:15
-        </p>
+              <p className="mt-6 text-gray-300 text-lg">
+                Josué 24:15
+              </p>
 
-      </div>
+            </div>
 
-    </div>
+          </div>
 
-  </div>
+        </div>
 
-</section>
+      </section>
 
 
 
@@ -1201,7 +1202,7 @@ className="relative z-10 w-full max-w-7xl text-center"
 
         <div className="relative z-10 max-w-7xl mx-auto">
 
-   
+
           {/* Encabezado */}
           <div className="text-center">
 
