@@ -256,7 +256,7 @@ className="relative z-10 w-full max-w-7xl text-center"
   >
 
     <span className="relative z-10 flex items-center gap-3">
-      📍 Ver Ubicación
+       Ver Ubicación
     </span>
 
     <div
