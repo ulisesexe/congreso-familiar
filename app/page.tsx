@@ -1370,70 +1370,166 @@ export default function Home() {
 
       </div>
 
-      {/* MAPA */}
+{/* MAPA */}
+<a
+  href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block group"
+>
+
+  <div
+    className="
+      relative
+      overflow-hidden
+      rounded-[40px]
+      shadow-2xl
+      min-h-[550px]
+      border
+      border-black/5
+      bg-white
+      cursor-pointer
+    "
+  >
+
+    {/* MAPA */}
+    <iframe
+      src="https://www.google.com/maps/embed?pb="
+      className="
+        absolute
+        inset-0
+        w-full
+        h-full
+        pointer-events-none
+      "
+      loading="lazy"
+    />
+
+    {/* Overlay Superior */}
+
+    <div
+      className="
+        absolute
+        top-6
+        left-6
+        bg-white/90
+        backdrop-blur-xl
+        rounded-2xl
+        px-5
+        py-3
+        shadow-xl
+      "
+    >
+
+      <p
+        className="
+          text-xs
+          uppercase
+          tracking-[3px]
+          text-gray-500
+        "
+      >
+        Ubicación del Evento
+      </p>
+
+      <p
+        className="
+          mt-1
+          font-semibold
+          text-[#20232C]
+        "
+      >
+        Abrir en Google Maps
+      </p>
+
+    </div>
+
+    {/* Overlay Inferior */}
+
+    <div
+      className="
+        absolute
+        bottom-6
+        left-6
+        right-6
+        bg-white/95
+        backdrop-blur-xl
+        rounded-[32px]
+        p-6
+        shadow-2xl
+        transition-all
+        duration-300
+        group-hover:scale-[1.02]
+      "
+    >
+
+      <p
+        className="
+          text-xs
+          uppercase
+          tracking-[4px]
+          text-gray-500
+        "
+      >
+        Congreso Familiar 2026
+      </p>
+
+      <h4
+        className="
+          mt-2
+          text-2xl
+          font-bold
+          text-[#20232C]
+        "
+      >
+        Iglesia Getsemaní
+      </h4>
+
+      <p
+        className="
+          text-gray-600
+          mt-2
+        "
+      >
+        El Durazno, Hidalgo
+      </p>
+
       <div
         className="
-          relative
-          overflow-hidden
-          rounded-[40px]
-          shadow-2xl
-          min-h-[550px]
-          border
-          border-black/5
-          bg-white
+          mt-4
+          flex
+          items-center
+          gap-2
+          text-[#20232C]
+          font-medium
         "
       >
 
-        {/* REEMPLAZA EL SRC CUANDO TENGAS EL EMBED */}
-        <iframe
-          src="https://www.google.com/maps/embed?pb="
-          className="absolute inset-0 w-full h-full"
-          loading="lazy"
-        />
+        <Navigation size={18} />
 
-        <div
-          className="
-            absolute
-            bottom-6
-            left-6
-            right-6
-            bg-white/90
-            backdrop-blur-xl
-            rounded-3xl
-            p-6
-            shadow-xl
-          "
-        >
-
-          <p
-            className="
-              text-sm
-              uppercase
-              tracking-[4px]
-              text-gray-500
-            "
-          >
-            Congreso Familiar 2026
-          </p>
-
-          <h4
-            className="
-              mt-2
-              text-2xl
-              font-bold
-              text-[#20232C]
-            "
-          >
-            Iglesia Getsemaní
-          </h4>
-
-          <p className="text-gray-600 mt-2">
-            El Durazno, Hidalgo
-          </p>
-
-        </div>
+        <span>
+          Toca para abrir la ruta
+        </span>
 
       </div>
+
+    </div>
+
+    {/* Hover Effect */}
+
+    <div
+      className="
+        absolute
+        inset-0
+        bg-[#20232C]/0
+        group-hover:bg-[#20232C]/5
+        transition-all
+      "
+    />
+
+  </div>
+
+</a>
 
     </div>
 
