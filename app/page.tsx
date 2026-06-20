@@ -7,7 +7,6 @@ export default function Home() {
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
       {/* HERO */}
-
       <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-5 py-20">
 
         {/* Glow principal */}
@@ -287,15 +286,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
       {/* ACERCA */}
       <section className="relative py-36 px-6 overflow-hidden">
 
@@ -530,24 +520,7 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {/* TEMAS */}
-
       <section className="relative py-36 px-6 overflow-hidden bg-white">
 
         {/* Glow decorativo */}
@@ -787,14 +760,6 @@ export default function Home() {
         </div>
 
       </section>
-
-
-
-
-
-
-
-
 
 
 
@@ -1180,347 +1145,338 @@ export default function Home() {
 
 
 
+{/* UBICACIÓN */}
+<section
+  id="ubicacion"
+  className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white"
+>
 
+  {/* Glow */}
+  <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
+  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
 
+  <div className="relative z-10 max-w-7xl mx-auto">
 
+    {/* Encabezado */}
+    <div className="text-center">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* UBICACIÓN */}
-
-      <section className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white">
-
-        {/* Glow Fondo */}
-
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
-
-        <div className="relative z-10 max-w-7xl mx-auto">
-
-
-          {/* Encabezado */}
-          <div className="text-center">
-
-            <span
-              className="
-      inline-block
-      px-5
-      py-2
-      rounded-full
-      bg-white
-      border
-      border-black/10
-      shadow-lg
-      text-sm
-      uppercase
-      tracking-[4px]
-      text-gray-600
-    "
-            >
-              Lugar del Evento
-            </span>
-
-            <h2
-              className="
-      mt-8
-      text-5xl
-      md:text-7xl
-      font-black
-      uppercase
-      text-[#20232C]
-    "
-            >
-              Ubicación
-            </h2>
-
-            <p
-              className="
-      mt-8
-      max-w-3xl
-      mx-auto
-      text-xl
-      text-gray-600
-      leading-relaxed
-    "
-            >
-              Te esperamos para vivir juntos una experiencia
-              especial de crecimiento, aprendizaje y comunión.
-            </p>
-
-          </div>
-
-          {/* Layout */}
-          <div className="grid lg:grid-cols-2 gap-10 mt-20">
-
-            {/* Información */}
-            <div
-              className="
-      bg-white
-      rounded-[40px]
-      p-10
-      shadow-2xl
-      border
-      border-black/5
-    "
-            >
-
-              <div
-                className="
-        w-20
-        h-20
-        rounded-3xl
-        bg-[#20232C]
-        text-white
-        flex
-        items-center
-        justify-center
-        text-4xl
-        shadow-xl
-      "
-              >
-                📍
-              </div>
-
-              <h3
-                className="
-        mt-8
-        text-4xl
-        font-bold
-        text-[#20232C]
-      "
-              >
-                Iglesia Getsemaní
-              </h3>
-
-              <p
-                className="
-        mt-4
-        text-xl
-        text-gray-600
-      "
-              >
-                El Durazno, Hidalgo
-              </p>
-
-              <div className="mt-10 space-y-5">
-
-                <div
-                  className="
-          flex
-          items-center
-          gap-4
-          p-5
-          rounded-2xl
-          bg-gray-50
-        "
-                >
-                  🗓️
-                  <span>Domingo 19 de Julio 2026</span>
-                </div>
-
-                <div
-                  className="
-          flex
-          items-center
-          gap-4
-          p-5
-          rounded-2xl
-          bg-gray-50
-        "
-                >
-                  ⏰
-                  <span>10:00 AM</span>
-                </div>
-
-                <div
-                  className="
-          flex
-          items-center
-          gap-4
-          p-5
-          rounded-2xl
-          bg-gray-50
-        "
-                >
-                  👨‍👩‍👧‍👦
-                  <span>Evento para toda la familia</span>
-                </div>
-
-              </div>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-
-                <button
-                  className="
-          group
-          relative
-          overflow-hidden
-          bg-[#20232C]
-          text-white
-          px-8
-          py-4
+      <span
+        className="
+          inline-block
+          px-5
+          py-2
           rounded-full
-          font-semibold
-          shadow-xl
-          hover:scale-105
-          transition-all
-        "
-                >
-                  Cómo llegar
-                </button>
-
-                <button
-                  className="
-          px-8
-          py-4
-          rounded-full
-          border-2
-          border-[#20232C]
-          hover:bg-[#20232C]
-          hover:text-white
-          transition-all
-        "
-                >
-                  Confirmar asistencia
-                </button>
-
-              </div>
-
-            </div>
-
-            {/* Mapa */}
-            <div
-              className="
-      relative
-      overflow-hidden
-      rounded-[40px]
-      shadow-2xl
-      min-h-[550px]
-      border
-      border-black/5
-    "
-            >
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb="
-                className="absolute inset-0 w-full h-full"
-                loading="lazy"
-              />
-
-              {/* Overlay */}
-              <div
-                className="
-        absolute
-        bottom-6
-        left-6
-        right-6
-        bg-white/90
-        backdrop-blur-xl
-        rounded-3xl
-        p-6
-        shadow-xl
-      "
-              >
-
-                <p
-                  className="
+          bg-white
+          border
+          border-black/10
+          shadow-lg
           text-sm
           uppercase
           tracking-[4px]
-          text-gray-500
+          text-gray-600
         "
-                >
-                  Congreso Familiar 2026
-                </p>
+      >
+        Cómo Llegar
+      </span>
 
-                <h4
-                  className="
-          mt-2
-          text-2xl
-          font-bold
+      <h2
+        className="
+          mt-8
+          text-5xl
+          md:text-7xl
+          font-black
+          uppercase
           text-[#20232C]
         "
-                >
-                  Iglesia Getsemaní
-                </h4>
+      >
+        Ubicación
+      </h2>
 
-                <p className="text-gray-600 mt-2">
-                  El Durazno, Hidalgo
-                </p>
+      <p
+        className="
+          mt-8
+          max-w-3xl
+          mx-auto
+          text-xl
+          text-gray-600
+          leading-relaxed
+        "
+      >
+        Te esperamos para vivir juntos una experiencia
+        especial de crecimiento, aprendizaje y comunión.
+      </p>
 
-              </div>
+    </div>
 
-            </div>
+    {/* GRID */}
+    <div className="grid lg:grid-cols-2 gap-10 mt-20">
 
+      {/* INFORMACIÓN */}
+      <div
+        className="
+          bg-white
+          rounded-[40px]
+          p-10
+          shadow-2xl
+          border
+          border-black/5
+        "
+      >
+
+        {/* Icono principal */}
+        <div
+          className="
+            w-20
+            h-20
+            rounded-3xl
+            bg-gradient-to-br
+            from-[#20232C]
+            to-[#3A4150]
+            text-white
+            flex
+            items-center
+            justify-center
+            shadow-2xl
+          "
+        >
+          <MapPin size={38} />
+        </div>
+
+        <h3
+          className="
+            mt-8
+            text-4xl
+            font-bold
+            text-[#20232C]
+          "
+        >
+          Iglesia Getsemaní
+        </h3>
+
+        <p className="mt-4 text-xl text-gray-600">
+          El Durazno, Hidalgo
+        </p>
+
+        <p className="text-gray-500 mt-2">
+          Congreso Familiar 2026
+        </p>
+
+        {/* Datos */}
+        <div className="mt-10 space-y-4">
+
+          <div
+            className="
+              flex
+              items-center
+              gap-4
+              p-5
+              rounded-2xl
+              bg-gray-50
+              border
+              border-gray-100
+            "
+          >
+            <CalendarDays
+              size={24}
+              className="text-[#20232C]"
+            />
+
+            <span>
+              Domingo 19 de Julio 2026
+            </span>
           </div>
 
-          {/* Frase */}
-          <div className="mt-24">
+          <div
+            className="
+              flex
+              items-center
+              gap-4
+              p-5
+              rounded-2xl
+              bg-gray-50
+              border
+              border-gray-100
+            "
+          >
+            <Clock3
+              size={24}
+              className="text-[#20232C]"
+            />
 
-            <div
-              className="
-      max-w-5xl
-      mx-auto
-      bg-[#20232C]
-      text-white
-      rounded-[40px]
-      px-12
-      py-14
-      text-center
-      shadow-2xl
-    "
-            >
-
-              <p
-                className="
-        uppercase
-        tracking-[4px]
-        text-gray-300
-        text-sm
-      "
-              >
-                Nos vemos pronto
-              </p>
-
-              <h3
-                className="
-        mt-6
-        text-3xl
-        md:text-5xl
-        font-light
-        leading-tight
-      "
-              >
-                Prepara tu corazón, reúne a tu familia
-                y acompáñanos en este tiempo especial.
-              </h3>
-
-            </div>
-
+            <span>
+              10:00 AM
+            </span>
           </div>
 
+          <div
+            className="
+              flex
+              items-center
+              gap-4
+              p-5
+              rounded-2xl
+              bg-gray-50
+              border
+              border-gray-100
+            "
+          >
+            <Users
+              size={24}
+              className="text-[#20232C]"
+            />
+
+            <span>
+              Evento para toda la familia
+            </span>
+          </div>
 
         </div>
 
-      </section>
+        {/* Botón */}
+        <div className="mt-10">
 
+          <a
+            href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex
+              items-center
+              gap-3
+              bg-[#20232C]
+              text-white
+              px-8
+              py-4
+              rounded-full
+              font-semibold
+              shadow-xl
+              hover:scale-105
+              transition-all
+            "
+          >
+            <Navigation size={20} />
+            Cómo Llegar
+          </a>
+
+        </div>
+
+      </div>
+
+      {/* MAPA */}
+      <div
+        className="
+          relative
+          overflow-hidden
+          rounded-[40px]
+          shadow-2xl
+          min-h-[550px]
+          border
+          border-black/5
+          bg-white
+        "
+      >
+
+        {/* REEMPLAZA EL SRC CUANDO TENGAS EL EMBED */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb="
+          className="absolute inset-0 w-full h-full"
+          loading="lazy"
+        />
+
+        <div
+          className="
+            absolute
+            bottom-6
+            left-6
+            right-6
+            bg-white/90
+            backdrop-blur-xl
+            rounded-3xl
+            p-6
+            shadow-xl
+          "
+        >
+
+          <p
+            className="
+              text-sm
+              uppercase
+              tracking-[4px]
+              text-gray-500
+            "
+          >
+            Congreso Familiar 2026
+          </p>
+
+          <h4
+            className="
+              mt-2
+              text-2xl
+              font-bold
+              text-[#20232C]
+            "
+          >
+            Iglesia Getsemaní
+          </h4>
+
+          <p className="text-gray-600 mt-2">
+            El Durazno, Hidalgo
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* FRASE FINAL */}
+    <div className="mt-24">
+
+      <div
+        className="
+          max-w-5xl
+          mx-auto
+          bg-[#20232C]
+          text-white
+          rounded-[40px]
+          px-12
+          py-14
+          text-center
+          shadow-2xl
+        "
+      >
+
+        <p
+          className="
+            uppercase
+            tracking-[4px]
+            text-gray-300
+            text-sm
+          "
+        >
+          Nos vemos pronto
+        </p>
+
+        <h3
+          className="
+            mt-6
+            text-3xl
+            md:text-5xl
+            font-light
+            leading-tight
+          "
+        >
+          Prepara tu corazón, reúne a tu familia
+          y acompáñanos en este tiempo especial.
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
