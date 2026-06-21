@@ -611,18 +611,6 @@ export default function Home() {
                 title: "Vida Espiritual",
                 description:
                   "Cómo mantener a Cristo en el centro de la familia."
-              },
-              {
-                icon: HandCoins,
-                title: "Finanzas Familiares",
-                description:
-                  "Administración responsable de los recursos conforme a principios bíblicos."
-              },
-              {
-                icon: Crown,
-                title: "Liderazgo Cristiano",
-                description:
-                  "Guiando el hogar con sabiduría, servicio y ejemplo."
               }
             ].map((tema, index) => {
 
