@@ -8,7 +8,7 @@ export default function Home() {
 
 {/* HERO */}
 
-<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DADADA] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
+<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DCDCDC] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
 
 {/* Glow Fondo */}
 
@@ -22,8 +22,8 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 >
 
-
-{/* Badge */}
+```
+{/* BADGE */}
 
 <div
   className="
@@ -100,11 +100,21 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 </div>
 
-{/* Línea */}
+{/* LINEA */}
 
-<div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-8 rounded-full" />
+<div
+  className="
+    w-24
+    md:w-40
+    h-[3px]
+    bg-[#20232C]
+    mx-auto
+    mt-8
+    rounded-full
+  "
+/>
 
-{/* Tema */}
+{/* TEMA */}
 
 <div className="mt-12">
 
@@ -132,33 +142,38 @@ className="relative z-10 w-full max-w-7xl text-center"
       mx-auto
     "
   >
-    “Pero yo y mi casa
+    “Pero yo y mi casa”
     <br />
-    serviremos a Jehová”
+    “serviremos a Jehová”
   </h3>
 
-  <p className="mt-6 text-lg md:text-2xl text-gray-500">
+  <p
+    className="
+      mt-6
+      text-lg
+      md:text-2xl
+      text-gray-500
+    "
+  >
     Josué 24:15
   </p>
 
 </div>
 
-{/* CARD INFORMACIÓN */}
+{/* INFORMACIÓN DEL EVENTO */}
 
 <div
   className="
     mt-14
     max-w-5xl
     mx-auto
+    bg-white/80
+    backdrop-blur-xl
     rounded-[40px]
-    overflow-hidden
-    bg-gradient-to-br
-    from-[#20232C]
-    via-[#2D3443]
-    to-[#3E475A]
-    shadow-[0_30px_80px_rgba(0,0,0,0.18)]
+    shadow-[0_20px_60px_rgba(0,0,0,0.12)]
     border
-    border-white/10
+    border-white/50
+    overflow-hidden
   "
 >
 
@@ -166,10 +181,6 @@ className="relative z-10 w-full max-w-7xl text-center"
     className="
       grid
       md:grid-cols-3
-      divide-y
-      md:divide-y-0
-      md:divide-x
-      divide-white/10
     "
   >
 
@@ -194,13 +205,13 @@ className="relative z-10 w-full max-w-7xl text-center"
           text-3xl
           md:text-4xl
           font-black
-          text-white
+          text-[#20232C]
         "
       >
         19 Julio
       </h3>
 
-      <p className="mt-2 text-gray-300">
+      <p className="mt-2 text-lg text-gray-500">
         2026
       </p>
 
@@ -208,7 +219,17 @@ className="relative z-10 w-full max-w-7xl text-center"
 
     {/* HORA */}
 
-    <div className="p-8 md:p-10 text-center">
+    <div
+      className="
+        p-8
+        md:p-10
+        text-center
+        border-y
+        md:border-y-0
+        md:border-x
+        border-black/5
+      "
+    >
 
       <p
         className="
@@ -227,13 +248,13 @@ className="relative z-10 w-full max-w-7xl text-center"
           text-3xl
           md:text-4xl
           font-black
-          text-white
+          text-[#20232C]
         "
       >
         10:00
       </h3>
 
-      <p className="mt-2 text-gray-300">
+      <p className="mt-2 text-lg text-gray-500">
         AM
       </p>
 
@@ -260,13 +281,18 @@ className="relative z-10 w-full max-w-7xl text-center"
           text-2xl
           md:text-3xl
           font-black
-          text-white
+          text-[#20232C]
         "
       >
         Iglesia Getsemaní
       </h3>
 
-      <p className="mt-2 text-gray-300">
+      <p
+        className="
+          mt-2
+          text-gray-500
+        "
+      >
         El Durazno, Hidalgo
       </p>
 
@@ -276,7 +302,7 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 </div>
 
-{/* BOTÓN */}
+{/* BOTÓN UBICACIÓN */}
 
 <div className="mt-12 flex justify-center">
 
@@ -323,11 +349,12 @@ className="relative z-10 w-full max-w-7xl text-center"
   </a>
 
 </div>
-
+```
 
 </motion.div>
 
 </section>
+
 
 
 
