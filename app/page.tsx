@@ -6,28 +6,31 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-      {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#D9D9D9] to-white flex items-center justify-center px-5 py-20">
+{/* HERO */}
 
-        {/* Glow principal */}
+<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DADADA] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
 
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-white/40 blur-3xl rounded-full" />
+{/* Glow Fondo */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative z-10 w-full max-w-7xl text-center"
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl" />
 
-        >
+<motion.div
+initial={{ opacity: 0, y: 60 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ duration: 1 }}
+className="relative z-10 w-full max-w-7xl text-center"
 
-          {/* Badge */}
-          <div
-            className="
+>
+
+
+{/* Badge */}
+
+<div
+  className="
     inline-flex
     items-center
     gap-3
-    px-5
+    px-6
     py-3
     rounded-full
     bg-white/80
@@ -36,50 +39,54 @@ export default function Home() {
     border
     border-black/5
   "
-          >
-            <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+>
 
-            <span
-              className="
+  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+
+  <span
+    className="
       text-xs
       md:text-sm
       uppercase
-      tracking-[4px]
+      tracking-[5px]
       font-medium
+      text-[#20232C]
     "
-            >
-              Congreso Familiar 2026
-            </span>
-          </div>
+  >
+    Congreso Familiar 2026
+  </span>
 
-          {/* TITULO */}
-          <div className="mt-8">
+</div>
 
-            <h1
-              className="
+{/* TITULO */}
+
+<div className="mt-10">
+
+  <h1
+    className="
       text-[4rem]
       sm:text-[5rem]
       md:text-[8rem]
       lg:text-[11rem]
       font-black
       uppercase
-      leading-[0.9]
+      leading-[0.85]
       tracking-tight
       text-[#20232C]
     "
-            >
-              Congreso
-            </h1>
+  >
+    Congreso
+  </h1>
 
-            <h2
-              className="
+  <h2
+    className="
       text-[3.5rem]
       sm:text-[4.5rem]
       md:text-[7rem]
       lg:text-[9rem]
       font-black
       uppercase
-      leading-[0.9]
+      leading-[0.85]
       bg-gradient-to-r
       from-[#20232C]
       via-[#4B5563]
@@ -87,32 +94,34 @@ export default function Home() {
       bg-clip-text
       text-transparent
     "
-            >
-              Familiar
-            </h2>
+  >
+    Familiar
+  </h2>
 
-          </div>
+</div>
 
-          {/* Línea */}
-          <div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-6 rounded-full" />
+{/* Línea */}
 
-          {/* Tema */}
-          <div className="mt-10">
+<div className="w-24 md:w-40 h-[3px] bg-[#20232C] mx-auto mt-8 rounded-full" />
 
-            <p
-              className="
+{/* Tema */}
+
+<div className="mt-12">
+
+  <p
+    className="
       uppercase
-      tracking-[6px]
+      tracking-[8px]
       text-sm
       text-gray-500
       mb-5
     "
-            >
-              Tema
-            </p>
+  >
+    Tema
+  </p>
 
-            <h3
-              className="
+  <h3
+    className="
       text-2xl
       sm:text-3xl
       md:text-5xl
@@ -122,122 +131,160 @@ export default function Home() {
       max-w-4xl
       mx-auto
     "
-            >
-              “Pero yo y mi casa
-              <br />
-              serviremos a Jehová”
-            </h3>
+  >
+    “Pero yo y mi casa
+    <br />
+    serviremos a Jehová”
+  </h3>
 
-            <p className="mt-5 text-lg md:text-2xl text-gray-500">
-              Josué 24:15
-            </p>
+  <p className="mt-6 text-lg md:text-2xl text-gray-500">
+    Josué 24:15
+  </p>
 
-          </div>
+</div>
 
-          {/* FECHA HORA LUGAR */}
-          <div
-            className="
-    mt-10
-    grid
-    grid-cols-1
-    sm:grid-cols-2
-    lg:grid-cols-3
-    gap-5
+{/* CARD INFORMACIÓN */}
+
+<div
+  className="
+    mt-14
     max-w-5xl
     mx-auto
+    rounded-[40px]
+    overflow-hidden
+    bg-gradient-to-br
+    from-[#20232C]
+    via-[#2D3443]
+    to-[#3E475A]
+    shadow-[0_30px_80px_rgba(0,0,0,0.18)]
+    border
+    border-white/10
   "
-          >
+>
 
-            <div
-              className="
-      bg-white/80
-      backdrop-blur-xl
-      rounded-3xl
-      p-6
-      shadow-xl
-      border
-      border-black/5
+  <div
+    className="
+      grid
+      md:grid-cols-3
+      divide-y
+      md:divide-y-0
+      md:divide-x
+      divide-white/10
     "
-            >
-              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-                Fecha
-              </p>
+  >
 
-              <p className="mt-3 text-3xl font-bold text-[#20232C]">
-                19 Julio 2026
-              </p>
-            </div>
+    {/* FECHA */}
 
-            <div
-              className="
-      bg-white/80
-      backdrop-blur-xl
-      rounded-3xl
-      p-6
-      shadow-xl
-      border
-      border-black/5
-    "
-            >
-              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-                Hora
-              </p>
+    <div className="p-8 md:p-10 text-center">
 
-              <p className="mt-3 text-3xl font-bold text-[#20232C]">
-                10:00 AM
-              </p>
-            </div>
+      <p
+        className="
+          uppercase
+          tracking-[6px]
+          text-xs
+          text-gray-400
+        "
+      >
+        Fecha
+      </p>
 
-            <div
-              className="
-      bg-white/80
-      backdrop-blur-xl
-      rounded-3xl
-      p-6
-      shadow-xl
-      border
-      border-black/5
-      sm:col-span-2
-      lg:col-span-1
-    "
-            >
-              <p className="uppercase tracking-[4px] text-gray-500 text-sm">
-                Lugar
-              </p>
+      <h3
+        className="
+          mt-4
+          text-3xl
+          md:text-4xl
+          font-black
+          text-white
+        "
+      >
+        19 Julio
+      </h3>
 
-              <p className="mt-3 text-2xl font-bold text-[#20232C]">
-                Iglesia Getsemaní
-              </p>
+      <p className="mt-2 text-gray-300">
+        2026
+      </p>
 
-              <p className="text-gray-500 mt-2">
-                El Durazno, Hidalgo
-              </p>
-            </div>
+    </div>
 
-          </div>
+    {/* HORA */}
 
-          {/* BOTONES */}
-          <div
-            className="
-    mt-10
-    flex
-    flex-col
-    sm:flex-row
-    justify-center
-    gap-4
-  "
-          >
+    <div className="p-8 md:p-10 text-center">
 
+      <p
+        className="
+          uppercase
+          tracking-[6px]
+          text-xs
+          text-gray-400
+        "
+      >
+        Hora
+      </p>
 
+      <h3
+        className="
+          mt-4
+          text-3xl
+          md:text-4xl
+          font-black
+          text-white
+        "
+      >
+        10:00
+      </h3>
 
-            {/* BOTON */}
-            <div className="mt-10 flex justify-center">
+      <p className="mt-2 text-gray-300">
+        AM
+      </p>
 
-              <a
-                href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
+    </div>
+
+    {/* LUGAR */}
+
+    <div className="p-8 md:p-10 text-center">
+
+      <p
+        className="
+          uppercase
+          tracking-[6px]
+          text-xs
+          text-gray-400
+        "
+      >
+        Lugar
+      </p>
+
+      <h3
+        className="
+          mt-4
+          text-2xl
+          md:text-3xl
+          font-black
+          text-white
+        "
+      >
+        Iglesia Getsemaní
+      </h3>
+
+      <p className="mt-2 text-gray-300">
+        El Durazno, Hidalgo
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+{/* BOTÓN */}
+
+<div className="mt-12 flex justify-center">
+
+  <a
+    href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
       group
       relative
       overflow-hidden
@@ -252,37 +299,36 @@ export default function Home() {
       transition-all
       duration-300
     "
-              >
+  >
 
-                <span className="relative z-10 flex items-center gap-3">
-                  Ver Ubicación
-                </span>
+    <span className="relative z-10">
+      Ver Ubicación
+    </span>
 
-                <div
-                  className="
+    <div
+      className="
         absolute
         inset-0
         bg-gradient-to-r
-        from-white/0
+        from-transparent
         via-white/20
-        to-white/0
+        to-transparent
         -translate-x-full
         group-hover:translate-x-full
         transition-transform
         duration-1000
       "
-                />
+    />
 
-              </a>
+  </a>
 
-            </div>
-
-          </div>
+</div>
 
 
-        </motion.div>
+</motion.div>
 
-      </section>
+</section>
+
 
 
 
