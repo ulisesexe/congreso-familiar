@@ -22,7 +22,6 @@ className="relative z-10 w-full max-w-7xl text-center"
 
 >
 
-```
 {/* BADGE */}
 
 <div
@@ -349,7 +348,6 @@ className="relative z-10 w-full max-w-7xl text-center"
   </a>
 
 </div>
-```
 
 </motion.div>
 
