@@ -141,7 +141,7 @@ export default function Home() {
               mx-auto
             "
           >
-            “Pero yo y mi casa”
+            “Pero yo y mi casa
             <br />
             serviremos a Jehová”
           </h3>
