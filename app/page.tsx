@@ -6,352 +6,352 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-{/* HERO */}
+        {/* HERO */}
 
-<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DCDCDC] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
+        <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DCDCDC] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
 
-{/* Glow Fondo */}
+        {/* Glow Fondo */}
 
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl" />
 
-<motion.div
-initial={{ opacity: 0, y: 60 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 1 }}
-className="relative z-10 w-full max-w-7xl text-center"
+        <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="relative z-10 w-full max-w-7xl text-center"
 
->
+        >
 
-{/* BADGE */}
+        {/* BADGE */}
 
-<div
-  className="
-    inline-flex
-    items-center
-    gap-3
-    px-6
-    py-3
-    rounded-full
-    bg-white/80
-    backdrop-blur-xl
-    shadow-xl
-    border
-    border-black/5
-  "
->
+        <div
+          className="
+            inline-flex
+            items-center
+            gap-3
+            px-6
+            py-3
+            rounded-full
+            bg-white/80
+            backdrop-blur-xl
+            shadow-xl
+            border
+            border-black/5
+          "
+        >
 
-  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+          <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
 
-  <span
-    className="
-      text-xs
-      md:text-sm
-      uppercase
-      tracking-[5px]
-      font-medium
-      text-[#20232C]
-    "
-  >
-    Congreso Familiar 2026
-  </span>
+          <span
+            className="
+              text-xs
+              md:text-sm
+              uppercase
+              tracking-[5px]
+              font-medium
+              text-[#20232C]
+            "
+          >
+            Congreso Familiar 2026
+          </span>
 
-</div>
+        </div>
 
-{/* TITULO */}
+        {/* TITULO */}
 
-<div className="mt-10">
+        <div className="mt-10">
 
-  <h1
-    className="
-      text-[4rem]
-      sm:text-[5rem]
-      md:text-[8rem]
-      lg:text-[11rem]
-      font-black
-      uppercase
-      leading-[0.85]
-      tracking-tight
-      text-[#20232C]
-    "
-  >
-    Congreso
-  </h1>
+          <h1
+            className="
+              text-[4rem]
+              sm:text-[5rem]
+              md:text-[8rem]
+              lg:text-[11rem]
+              font-black
+              uppercase
+              leading-[0.85]
+              tracking-tight
+              text-[#20232C]
+            "
+          >
+            Congreso
+          </h1>
 
-  <h2
-    className="
-      text-[3.5rem]
-      sm:text-[4.5rem]
-      md:text-[7rem]
-      lg:text-[9rem]
-      font-black
-      uppercase
-      leading-[0.85]
-      bg-gradient-to-r
-      from-[#20232C]
-      via-[#4B5563]
-      to-[#20232C]
-      bg-clip-text
-      text-transparent
-    "
-  >
-    Familiar
-  </h2>
+          <h2
+            className="
+              text-[3.5rem]
+              sm:text-[4.5rem]
+              md:text-[7rem]
+              lg:text-[9rem]
+              font-black
+              uppercase
+              leading-[0.85]
+              bg-gradient-to-r
+              from-[#20232C]
+              via-[#4B5563]
+              to-[#20232C]
+              bg-clip-text
+              text-transparent
+            "
+          >
+            Familiar
+          </h2>
 
-</div>
+        </div>
 
-{/* LINEA */}
+        {/* LINEA */}
 
-<div
-  className="
-    w-24
-    md:w-40
-    h-[3px]
-    bg-[#20232C]
-    mx-auto
-    mt-8
-    rounded-full
-  "
-/>
+        <div
+          className="
+            w-24
+            md:w-40
+            h-[3px]
+            bg-[#20232C]
+            mx-auto
+            mt-8
+            rounded-full
+          "
+        />
 
-{/* TEMA */}
+        {/* TEMA */}
 
-<div className="mt-12">
+        <div className="mt-12">
 
-  <p
-    className="
-      uppercase
-      tracking-[8px]
-      text-sm
-      text-gray-500
-      mb-5
-    "
-  >
-    Tema
-  </p>
+          <p
+            className="
+              uppercase
+              tracking-[8px]
+              text-sm
+              text-gray-500
+              mb-5
+            "
+          >
+            Tema
+          </p>
 
-  <h3
-    className="
-      text-2xl
-      sm:text-3xl
-      md:text-5xl
-      font-light
-      leading-tight
-      text-[#20232C]
-      max-w-4xl
-      mx-auto
-    "
-  >
-    “Pero yo y mi casa”
-    <br />
-    “serviremos a Jehová”
-  </h3>
+          <h3
+            className="
+              text-2xl
+              sm:text-3xl
+              md:text-5xl
+              font-light
+              leading-tight
+              text-[#20232C]
+              max-w-4xl
+              mx-auto
+            "
+          >
+            “Pero yo y mi casa”
+            <br />
+            serviremos a Jehová”
+          </h3>
 
-  <p
-    className="
-      mt-6
-      text-lg
-      md:text-2xl
-      text-gray-500
-    "
-  >
-    Josué 24:15
-  </p>
+          <p
+            className="
+              mt-6
+              text-lg
+              md:text-2xl
+              text-gray-500
+            "
+          >
+            Josué 24:15
+          </p>
 
-</div>
+        </div>
 
-{/* INFORMACIÓN DEL EVENTO */}
+        {/* INFORMACIÓN DEL EVENTO */}
 
-<div
-  className="
-    mt-14
-    max-w-5xl
-    mx-auto
-    bg-white/80
-    backdrop-blur-xl
-    rounded-[40px]
-    shadow-[0_20px_60px_rgba(0,0,0,0.12)]
-    border
-    border-white/50
-    overflow-hidden
-  "
->
+        <div
+          className="
+            mt-14
+            max-w-5xl
+            mx-auto
+            bg-white/80
+            backdrop-blur-xl
+            rounded-[40px]
+            shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+            border
+            border-white/50
+            overflow-hidden
+          "
+        >
 
-  <div
-    className="
-      grid
-      md:grid-cols-3
-    "
-  >
+          <div
+            className="
+              grid
+              md:grid-cols-3
+            "
+          >
 
-    {/* FECHA */}
+            {/* FECHA */}
 
-    <div className="p-8 md:p-10 text-center">
+            <div className="p-8 md:p-10 text-center">
 
-      <p
-        className="
-          uppercase
-          tracking-[6px]
-          text-xs
-          text-gray-400
-        "
-      >
-        Fecha
-      </p>
+              <p
+                className="
+                  uppercase
+                  tracking-[6px]
+                  text-xs
+                  text-gray-400
+                "
+              >
+                Fecha
+              </p>
 
-      <h3
-        className="
-          mt-4
-          text-3xl
-          md:text-4xl
-          font-black
-          text-[#20232C]
-        "
-      >
-        19 Julio
-      </h3>
+              <h3
+                className="
+                  mt-4
+                  text-3xl
+                  md:text-4xl
+                  font-black
+                  text-[#20232C]
+                "
+              >
+                19 Julio
+              </h3>
 
-      <p className="mt-2 text-lg text-gray-500">
-        2026
-      </p>
+              <p className="mt-2 text-lg text-gray-500">
+                2026
+              </p>
 
-    </div>
+            </div>
 
-    {/* HORA */}
+            {/* HORA */}
 
-    <div
-      className="
-        p-8
-        md:p-10
-        text-center
-        border-y
-        md:border-y-0
-        md:border-x
-        border-black/5
-      "
-    >
+            <div
+              className="
+                p-8
+                md:p-10
+                text-center
+                border-y
+                md:border-y-0
+                md:border-x
+                border-black/5
+              "
+            >
 
-      <p
-        className="
-          uppercase
-          tracking-[6px]
-          text-xs
-          text-gray-400
-        "
-      >
-        Hora
-      </p>
+              <p
+                className="
+                  uppercase
+                  tracking-[6px]
+                  text-xs
+                  text-gray-400
+                "
+              >
+                Hora
+              </p>
 
-      <h3
-        className="
-          mt-4
-          text-3xl
-          md:text-4xl
-          font-black
-          text-[#20232C]
-        "
-      >
-        10:00
-      </h3>
+              <h3
+                className="
+                  mt-4
+                  text-3xl
+                  md:text-4xl
+                  font-black
+                  text-[#20232C]
+                "
+              >
+                10:00
+              </h3>
 
-      <p className="mt-2 text-lg text-gray-500">
-        AM
-      </p>
+              <p className="mt-2 text-lg text-gray-500">
+                AM
+              </p>
 
-    </div>
+            </div>
 
-    {/* LUGAR */}
+            {/* LUGAR */}
 
-    <div className="p-8 md:p-10 text-center">
+            <div className="p-8 md:p-10 text-center">
 
-      <p
-        className="
-          uppercase
-          tracking-[6px]
-          text-xs
-          text-gray-400
-        "
-      >
-        Lugar
-      </p>
+              <p
+                className="
+                  uppercase
+                  tracking-[6px]
+                  text-xs
+                  text-gray-400
+                "
+              >
+                Lugar
+              </p>
 
-      <h3
-        className="
-          mt-4
-          text-2xl
-          md:text-3xl
-          font-black
-          text-[#20232C]
-        "
-      >
-        Iglesia Getsemaní
-      </h3>
+              <h3
+                className="
+                  mt-4
+                  text-2xl
+                  md:text-3xl
+                  font-black
+                  text-[#20232C]
+                "
+              >
+                Iglesia Getsemaní
+              </h3>
 
-      <p
-        className="
-          mt-2
-          text-gray-500
-        "
-      >
-        El Durazno, Hidalgo
-      </p>
+              <p
+                className="
+                  mt-2
+                  text-gray-500
+                "
+              >
+                El Durazno, Hidalgo
+              </p>
 
-    </div>
+            </div>
 
-  </div>
+          </div>
 
-</div>
+        </div>
 
-{/* BOTÓN UBICACIÓN */}
+        {/* BOTÓN UBICACIÓN */}
 
-<div className="mt-12 flex justify-center">
+        <div className="mt-12 flex justify-center">
 
-  <a
-    href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      group
-      relative
-      overflow-hidden
-      bg-[#20232C]
-      text-white
-      px-10
-      py-5
-      rounded-full
-      font-semibold
-      shadow-2xl
-      hover:scale-105
-      transition-all
-      duration-300
-    "
-  >
+          <a
+            href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              group
+              relative
+              overflow-hidden
+              bg-[#20232C]
+              text-white
+              px-10
+              py-5
+              rounded-full
+              font-semibold
+              shadow-2xl
+              hover:scale-105
+              transition-all
+              duration-300
+            "
+          >
 
-    <span className="relative z-10">
-      Ver Ubicación
-    </span>
+            <span className="relative z-10">
+              Ver Ubicación
+            </span>
 
-    <div
-      className="
-        absolute
-        inset-0
-        bg-gradient-to-r
-        from-transparent
-        via-white/20
-        to-transparent
-        -translate-x-full
-        group-hover:translate-x-full
-        transition-transform
-        duration-1000
-      "
-    />
+            <div
+              className="
+                absolute
+                inset-0
+                bg-gradient-to-r
+                from-transparent
+                via-white/20
+                to-transparent
+                -translate-x-full
+                group-hover:translate-x-full
+                transition-transform
+                duration-1000
+              "
+            />
 
-  </a>
+          </a>
 
-</div>
+        </div>
 
-</motion.div>
+        </motion.div>
 
-</section>
+        </section>
 
 
 
