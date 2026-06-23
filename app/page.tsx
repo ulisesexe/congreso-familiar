@@ -292,7 +292,7 @@ export default function Home() {
                   text-gray-500
                 "
               >
-                El Durazno, Hidalgo
+                El Durazno, Ixmiquilpan, Hidalgo
               </p>
 
             </div>
@@ -1339,7 +1339,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-xl text-gray-600">
-                El Durazno, Hidalgo
+                El Durazno, Ixmiquilpan, Hidalgo
               </p>
 
               <p className="text-gray-500 mt-2">
@@ -1523,7 +1523,7 @@ export default function Home() {
                   </h4>
 
                   <p className="text-gray-600 mt-2">
-                    42310, El Durazno, Hidalgo
+                    42310, El Durazno, Ixmiquilpan, Hidalgo
                   </p>
 
                   <div
@@ -1759,7 +1759,7 @@ export default function Home() {
                   <MapPin size={18} />
 
                   <span>
-                    El Durazno, Hidalgo
+                    El Durazno, Ixmiquilpan, Hidalgo
                   </span>
 
                 </div>
