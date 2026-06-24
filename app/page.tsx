@@ -6,58 +6,241 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-{/* NAVEGACIÓN PREMIUM */}
+{/* NAVEGACIÓN LATERAL */}
 
 <div
   className="
     fixed
-    top-5
-    left-1/2
-    -translate-x-1/2
+    right-6
+    top-1/2
+    -translate-y-1/2
     z-[999]
     hidden
     lg:flex
-    items-center
-    gap-1
-    px-3
-    py-3
-    rounded-full
-    bg-[#20232C]/85
-    backdrop-blur-2xl
-    border
-    border-white/10
-    shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+    flex-col
+    gap-4
   "
 >
 
-  {[
-    ["Inicio", "#inicio"],
-    ["Acerca", "#acerca"],
-    ["Temas", "#temas"],
-    ["Programa", "#programa"],
-    ["Ubicación", "#ubicacion"],
-  ].map(([label, href]) => (
-
-    <a
-      key={label}
-      href={href}
+  <a
+    href="#inicio"
+    className="
+      group
+      flex
+      items-center
+      justify-end
+    "
+  >
+    <span
       className="
-        px-6
-        py-3
-        rounded-full
-        text-white/80
-        hover:text-white
-        hover:bg-white/10
+        mr-3
+        opacity-0
+        translate-x-4
+        group-hover:opacity-100
+        group-hover:translate-x-0
         transition-all
         duration-300
+        bg-[#20232C]
+        text-white
+        px-4
+        py-2
+        rounded-full
         text-sm
-        font-medium
+        whitespace-nowrap
+        shadow-xl
       "
     >
-      {label}
-    </a>
+      Inicio
+    </span>
 
-  ))}
+    <div
+      className="
+        w-4
+        h-4
+        rounded-full
+        bg-[#20232C]
+        shadow-lg
+        hover:scale-125
+        transition
+      "
+    />
+  </a>
+
+  <a
+    href="#acerca"
+    className="
+      group
+      flex
+      items-center
+      justify-end
+    "
+  >
+    <span
+      className="
+        mr-3
+        opacity-0
+        translate-x-4
+        group-hover:opacity-100
+        group-hover:translate-x-0
+        transition-all
+        duration-300
+        bg-[#20232C]
+        text-white
+        px-4
+        py-2
+        rounded-full
+        text-sm
+        whitespace-nowrap
+        shadow-xl
+      "
+    >
+      Acerca
+    </span>
+
+    <div
+      className="
+        w-4
+        h-4
+        rounded-full
+        bg-[#20232C]
+        shadow-lg
+        hover:scale-125
+        transition
+      "
+    />
+  </a>
+
+  <a
+    href="#temas"
+    className="
+      group
+      flex
+      items-center
+      justify-end
+    "
+  >
+    <span
+      className="
+        mr-3
+        opacity-0
+        translate-x-4
+        group-hover:opacity-100
+        group-hover:translate-x-0
+        transition-all
+        duration-300
+        bg-[#20232C]
+        text-white
+        px-4
+        py-2
+        rounded-full
+        text-sm
+        whitespace-nowrap
+        shadow-xl
+      "
+    >
+      Temas
+    </span>
+
+    <div
+      className="
+        w-4
+        h-4
+        rounded-full
+        bg-[#20232C]
+        shadow-lg
+        hover:scale-125
+        transition
+      "
+    />
+  </a>
+
+  <a
+    href="#programa"
+    className="
+      group
+      flex
+      items-center
+      justify-end
+    "
+  >
+    <span
+      className="
+        mr-3
+        opacity-0
+        translate-x-4
+        group-hover:opacity-100
+        group-hover:translate-x-0
+        transition-all
+        duration-300
+        bg-[#20232C]
+        text-white
+        px-4
+        py-2
+        rounded-full
+        text-sm
+        whitespace-nowrap
+        shadow-xl
+      "
+    >
+      Programa
+    </span>
+
+    <div
+      className="
+        w-4
+        h-4
+        rounded-full
+        bg-[#20232C]
+        shadow-lg
+        hover:scale-125
+        transition
+      "
+    />
+  </a>
+
+  <a
+    href="#ubicacion"
+    className="
+      group
+      flex
+      items-center
+      justify-end
+    "
+  >
+    <span
+      className="
+        mr-3
+        opacity-0
+        translate-x-4
+        group-hover:opacity-100
+        group-hover:translate-x-0
+        transition-all
+        duration-300
+        bg-[#20232C]
+        text-white
+        px-4
+        py-2
+        rounded-full
+        text-sm
+        whitespace-nowrap
+        shadow-xl
+      "
+    >
+      Ubicación
+    </span>
+
+    <div
+      className="
+        w-4
+        h-4
+        rounded-full
+        bg-[#20232C]
+        shadow-lg
+        hover:scale-125
+        transition
+      "
+    />
+  </a>
 
 </div>
 
