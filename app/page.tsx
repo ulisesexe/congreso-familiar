@@ -6,26 +6,140 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-        {/* HERO */}
+      {/* NAVEGACIÓN FLOTANTE */}
 
-        <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DCDCDC] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
+      <div
+        className="
+          fixed
+          top-6
+          left-1/2
+          -translate-x-1/2
+          z-[999]
+          hidden
+          lg:flex
+          items-center
+          gap-2
+          p-2
+          rounded-full
+          bg-white/80
+          backdrop-blur-xl
+          border
+          border-black/5
+          shadow-2xl
+        "
+      >
 
+        <a
+          href="#inicio"
+          className="
+            px-5
+            py-3
+            rounded-full
+            hover:bg-[#20232C]
+            hover:text-white
+            transition-all
+          "
+        >
+          Inicio
+        </a>
+
+        <a
+          href="#acerca"
+          className="
+            px-5
+            py-3
+            rounded-full
+            hover:bg-[#20232C]
+            hover:text-white
+            transition-all
+          "
+        >
+          Acerca
+        </a>
+
+        <a
+          href="#temas"
+          className="
+            px-5
+            py-3
+            rounded-full
+            hover:bg-[#20232C]
+            hover:text-white
+            transition-all
+          "
+        >
+          Temas
+        </a>
+
+        <a
+          href="#programa"
+          className="
+            px-5
+            py-3
+            rounded-full
+            hover:bg-[#20232C]
+            hover:text-white
+            transition-all
+          "
+        >
+          Programa
+        </a>
+
+        <a
+          href="#ubicacion"
+          className="
+            px-5
+            py-3
+            rounded-full
+            hover:bg-[#20232C]
+            hover:text-white
+            transition-all
+          "
+        >
+          Ubicación
+        </a>
+
+      </div>
+
+      <a
+        href="#inicio"
+        className="
+          fixed
+          bottom-8
+          right-8
+          z-[999]
+          w-14
+          h-14
+          rounded-full
+          bg-[#20232C]
+          text-white
+          flex
+          items-center
+          justify-center
+          shadow-2xl
+          hover:scale-110
+          transition-all
+        "
+      >
+        ↑
+      </a>
+
+      {/* HERO */}
+      <section id="inicio" className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#ECECEC] via-[#DCDCDC] to-[#F8F8F8] flex items-center justify-center px-5 py-24">
         {/* Glow Fondo */}
-
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl" />
-
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl" />
         <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="relative z-10 w-full max-w-7xl text-center"
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative z-10 w-full max-w-7xl text-center"
 
         >
 
-        {/* BADGE */}
+          {/* BADGE */}
 
-        <div
-          className="
+          <div
+            className="
             inline-flex
             items-center
             gap-3
@@ -38,12 +152,12 @@ export default function Home() {
             border
             border-black/5
           "
-        >
+          >
 
-          <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+            <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
 
-          <span
-            className="
+            <span
+              className="
               text-xs
               md:text-sm
               uppercase
@@ -51,18 +165,18 @@ export default function Home() {
               font-medium
               text-[#20232C]
             "
-          >
-            Congreso Familiar 2026
-          </span>
+            >
+              Congreso Familiar 2026
+            </span>
 
-        </div>
+          </div>
 
-        {/* TITULO */}
+          {/* TITULO */}
 
-        <div className="mt-10">
+          <div className="mt-10">
 
-          <h1
-            className="
+            <h1
+              className="
               text-[4rem]
               sm:text-[5rem]
               md:text-[8rem]
@@ -73,12 +187,12 @@ export default function Home() {
               tracking-tight
               text-[#20232C]
             "
-          >
-            Congreso
-          </h1>
+            >
+              Congreso
+            </h1>
 
-          <h2
-            className="
+            <h2
+              className="
               text-[3.5rem]
               sm:text-[4.5rem]
               md:text-[7rem]
@@ -93,16 +207,16 @@ export default function Home() {
               bg-clip-text
               text-transparent
             "
-          >
-            Familiar
-          </h2>
+            >
+              Familiar
+            </h2>
 
-        </div>
+          </div>
 
-        {/* LINEA */}
+          {/* LINEA */}
 
-        <div
-          className="
+          <div
+            className="
             w-24
             md:w-40
             h-[3px]
@@ -111,26 +225,26 @@ export default function Home() {
             mt-8
             rounded-full
           "
-        />
+          />
 
-        {/* TEMA */}
+          {/* TEMA */}
 
-        <div className="mt-12">
+          <div className="mt-12">
 
-          <p
-            className="
+            <p
+              className="
               uppercase
               tracking-[8px]
               text-sm
               text-gray-500
               mb-5
             "
-          >
-            Tema
-          </p>
+            >
+              Tema
+            </p>
 
-          <h3
-            className="
+            <h3
+              className="
               text-2xl
               sm:text-3xl
               md:text-5xl
@@ -140,29 +254,29 @@ export default function Home() {
               max-w-4xl
               mx-auto
             "
-          >
-            “Pero yo y mi casa
-            <br />
-            serviremos a Jehová”
-          </h3>
+            >
+              “Pero yo y mi casa
+              <br />
+              serviremos a Jehová”
+            </h3>
 
-          <p
-            className="
+            <p
+              className="
               mt-6
               text-lg
               md:text-2xl
               text-gray-500
             "
-          >
-            Josué 24:15
-          </p>
+            >
+              Josué 24:15
+            </p>
 
-        </div>
+          </div>
 
-        {/* INFORMACIÓN DEL EVENTO */}
+          {/* INFORMACIÓN DEL EVENTO */}
 
-        <div
-          className="
+          <div
+            className="
             mt-14
             max-w-5xl
             mx-auto
@@ -174,52 +288,52 @@ export default function Home() {
             border-white/50
             overflow-hidden
           "
-        >
+          >
 
-          <div
-            className="
+            <div
+              className="
               grid
               md:grid-cols-3
             "
-          >
+            >
 
-            {/* FECHA */}
+              {/* FECHA */}
 
-            <div className="p-8 md:p-10 text-center">
+              <div className="p-8 md:p-10 text-center">
 
-              <p
-                className="
+                <p
+                  className="
                   uppercase
                   tracking-[6px]
                   text-xs
                   text-gray-400
                 "
-              >
-                Fecha
-              </p>
+                >
+                  Fecha
+                </p>
 
-              <h3
-                className="
+                <h3
+                  className="
                   mt-4
                   text-3xl
                   md:text-4xl
                   font-black
                   text-[#20232C]
                 "
-              >
-                19 Julio
-              </h3>
+                >
+                  19 Julio
+                </h3>
 
-              <p className="mt-2 text-lg text-gray-500">
-                2026
-              </p>
+                <p className="mt-2 text-lg text-gray-500">
+                  2026
+                </p>
 
-            </div>
+              </div>
 
-            {/* HORA */}
+              {/* HORA */}
 
-            <div
-              className="
+              <div
+                className="
                 p-8
                 md:p-10
                 text-center
@@ -228,88 +342,88 @@ export default function Home() {
                 md:border-x
                 border-black/5
               "
-            >
+              >
 
-              <p
-                className="
+                <p
+                  className="
                   uppercase
                   tracking-[6px]
                   text-xs
                   text-gray-400
                 "
-              >
-                Hora
-              </p>
+                >
+                  Hora
+                </p>
 
-              <h3
-                className="
+                <h3
+                  className="
                   mt-4
                   text-3xl
                   md:text-4xl
                   font-black
                   text-[#20232C]
                 "
-              >
-                10:00
-              </h3>
+                >
+                  10:00
+                </h3>
 
-              <p className="mt-2 text-lg text-gray-500">
-                AM
-              </p>
+                <p className="mt-2 text-lg text-gray-500">
+                  AM
+                </p>
 
-            </div>
+              </div>
 
-            {/* LUGAR */}
+              {/* LUGAR */}
 
-            <div className="p-8 md:p-10 text-center">
+              <div className="p-8 md:p-10 text-center">
 
-              <p
-                className="
+                <p
+                  className="
                   uppercase
                   tracking-[6px]
                   text-xs
                   text-gray-400
                 "
-              >
-                Lugar
-              </p>
+                >
+                  Lugar
+                </p>
 
-              <h3
-                className="
+                <h3
+                  className="
                   mt-4
                   text-2xl
                   md:text-3xl
                   font-black
                   text-[#20232C]
                 "
-              >
-                Iglesia Getsemaní
-              </h3>
+                >
+                  Iglesia Getsemaní
+                </h3>
 
-              <p
-                className="
+                <p
+                  className="
                   mt-2
                   text-gray-500
                 "
-              >
-                El Durazno, Ixmiquilpan, Hidalgo
-              </p>
+                >
+                  El Durazno, Ixmiquilpan, Hidalgo
+                </p>
+
+              </div>
 
             </div>
 
           </div>
 
-        </div>
+          {/* BOTÓN UBICACIÓN */}
 
-        {/* BOTÓN UBICACIÓN */}
+          <div className="mt-12 flex justify-center">
 
-        <div className="mt-12 flex justify-center">
-
-          <a
-            href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
+            <a
+              href="https://maps.app.goo.gl/YFNQWnW9Forg43bV7?g_st=iwb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
               group
               relative
               overflow-hidden
@@ -324,14 +438,14 @@ export default function Home() {
               transition-all
               duration-300
             "
-          >
+            >
 
-            <span className="relative z-10">
-              Ver Ubicación
-            </span>
+              <span className="relative z-10">
+                Ver Ubicación
+              </span>
 
-            <div
-              className="
+              <div
+                className="
                 absolute
                 inset-0
                 bg-gradient-to-r
@@ -343,22 +457,19 @@ export default function Home() {
                 transition-transform
                 duration-1000
               "
-            />
+              />
 
-          </a>
+            </a>
 
-        </div>
+          </div>
 
         </motion.div>
 
-        </section>
-
-
-
+      </section>
 
 
       {/* ACERCA */}
-      <section className="relative py-36 px-6 overflow-hidden">
+      <section id="acerca" className="relative py-36 px-6 overflow-hidden">
 
         {/* Glow Fondo */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-white/50 blur-3xl rounded-full" />
@@ -590,9 +701,8 @@ export default function Home() {
       </section>
 
 
-
       {/* TEMAS */}
-      <section className="relative py-36 px-6 overflow-hidden bg-white">
+      <section id="temas" className="relative py-36 px-6 overflow-hidden bg-white">
 
         {/* Glow decorativo */}
 
@@ -847,9 +957,8 @@ export default function Home() {
       </section>
 
 
-
       {/* PROGRAMA */}
-      <section className="relative py-36 px-6 overflow-hidden bg-[#20232C] text-white">
+      <section id="programa" className="relative py-36 px-6 overflow-hidden bg-[#20232C] text-white">
 
         {/* Glow Fondo */}
         <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-white/5 rounded-full blur-3xl" />
@@ -1229,12 +1338,8 @@ export default function Home() {
       </section>
 
 
-
       {/* UBICACIÓN */}
-      <section
-        id="ubicacion"
-        className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white"
-      >
+      <section id="ubicacion" className="relative py-36 px-6 overflow-hidden bg-gradient-to-b from-[#F8F8F8] to-white">
 
         {/* Glow */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20232C]/5 rounded-full blur-3xl" />
@@ -1606,9 +1711,8 @@ export default function Home() {
       </section>
 
 
-
       {/* FOOTER */}
-      <footer className="relative overflow-hidden bg-[#20232C] text-white">
+      <footer id="footer" className="relative overflow-hidden bg-[#20232C] text-white">
 
         {/* Glow decorativo */}
 
@@ -1839,7 +1943,6 @@ export default function Home() {
         </div>
 
       </footer>
-
 
     </main>
   );
