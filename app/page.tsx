@@ -6,103 +6,63 @@ export default function Home() {
   return (
     <main className="bg-[#D9D9D9] text-[#20232C]">
 
-      {/* NAVEGACIÓN FLOTANTE */}
+{/* NAVEGACIÓN PREMIUM */}
 
-      <div
-        className="
-          fixed
-          top-6
-          left-1/2
-          -translate-x-1/2
-          z-[999]
-          hidden
-          lg:flex
-          items-center
-          gap-2
-          p-2
-          rounded-full
-          bg-white/80
-          backdrop-blur-xl
-          border
-          border-black/5
-          shadow-2xl
-        "
-      >
+<div
+  className="
+    fixed
+    top-5
+    left-1/2
+    -translate-x-1/2
+    z-[999]
+    hidden
+    lg:flex
+    items-center
+    gap-1
+    px-3
+    py-3
+    rounded-full
+    bg-[#20232C]/85
+    backdrop-blur-2xl
+    border
+    border-white/10
+    shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+  "
+>
 
-        <a
-          href="#inicio"
-          className="
-            px-5
-            py-3
-            rounded-full
-            hover:bg-[#20232C]
-            hover:text-white
-            transition-all
-          "
-        >
-          Inicio
-        </a>
+  {[
+    ["Inicio", "#inicio"],
+    ["Acerca", "#acerca"],
+    ["Temas", "#temas"],
+    ["Programa", "#programa"],
+    ["Ubicación", "#ubicacion"],
+  ].map(([label, href]) => (
 
-        <a
-          href="#acerca"
-          className="
-            px-5
-            py-3
-            rounded-full
-            hover:bg-[#20232C]
-            hover:text-white
-            transition-all
-          "
-        >
-          Acerca
-        </a>
+    <a
+      key={label}
+      href={href}
+      className="
+        px-6
+        py-3
+        rounded-full
+        text-white/80
+        hover:text-white
+        hover:bg-white/10
+        transition-all
+        duration-300
+        text-sm
+        font-medium
+      "
+    >
+      {label}
+    </a>
 
-        <a
-          href="#temas"
-          className="
-            px-5
-            py-3
-            rounded-full
-            hover:bg-[#20232C]
-            hover:text-white
-            transition-all
-          "
-        >
-          Temas
-        </a>
+  ))}
 
-        <a
-          href="#programa"
-          className="
-            px-5
-            py-3
-            rounded-full
-            hover:bg-[#20232C]
-            hover:text-white
-            transition-all
-          "
-        >
-          Programa
-        </a>
+</div>
 
-        <a
-          href="#ubicacion"
-          className="
-            px-5
-            py-3
-            rounded-full
-            hover:bg-[#20232C]
-            hover:text-white
-            transition-all
-          "
-        >
-          Ubicación
-        </a>
 
-      </div>
-
-      <a
-        href="#inicio"
+      <a href="#inicio"
         className="
           fixed
           bottom-8
